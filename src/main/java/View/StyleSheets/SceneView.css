@@ -1,0 +1,10 @@
+.root {
+
+    -fx-background-color: green;
+}
+
+.circle {
+    -fx-background-color: Red;
+    -fx-border-color: green;
+    -fx-border-width: 5px;
+}
