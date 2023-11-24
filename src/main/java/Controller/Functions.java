@@ -2,6 +2,7 @@ package Controller;
 
 import javafx.application.Platform;
 import javafx.scene.Node;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
 /*
@@ -15,6 +16,15 @@ public class Functions {
         Platform.runLater( () -> {
             obj.setLayoutX( x - (obj.getBoundsInLocal().getWidth() / 2) );
             obj.setLayoutY( y - obj.getBoundsInLocal().getWidth() / 2 );
+        });
+    }
+
+    // Sets all buttons in a group to the style inputted. -MH
+    public void setCollectionButtonStyle(Region group, String style ){
+
+        group.getChildrenUnmodifiable().forEach( Button -> {
+
+            Button.getStyleClass().addAll(style);
         });
     }
 }

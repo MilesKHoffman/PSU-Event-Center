@@ -11,10 +11,11 @@ public class UI_Testing extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        LoginView loginView = new LoginView();
+
+        HomescreenView homeView = new HomescreenView();
 
         stage = new Stage();
-        setStageScene( loginView.getScene() );
+        setStageScene( homeView.getScene() );
         stage.setTitle("SWENG 411 Proj");
         stage.show();
     }

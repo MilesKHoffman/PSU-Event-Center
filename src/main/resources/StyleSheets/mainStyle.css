@@ -1,9 +1,11 @@
 .var{
 
     primaryColor: white;
-    secondColor: #448ef3; /* blue 2179f1 */
-    thirdColor: #041E42; /* Navy */
-    fourthColor: #dfecfd; /* Light Blue */
+    secondColor: #dfecfd; /* blue */
+    thirdColor: #448ef3; /* Navy */
+    fourthColor: #0A4AA2; /* Light Blue */
+    fifthColor: #041E42;
+
     backColor: #91bcf8;
 }
 
@@ -12,24 +14,69 @@
 }
 
 TextField {
-
-    -fx-border-color: thirdColor;
     -fx-border-width: 2;
-    -fx-border-radius: 10;
-    -fx-background-color: primaryColor;
-    -fx-background-radius: 12;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
     -fx-background-insets: 1;
+    -fx-font-style: italic;
 }
+    TextField:focused{
+        -fx-font-style: normal;
+    }
 
 Button {
-    -fx-background-color: fourthColor;
-    -fx-border-color: thirdColor;
-    -fx-border-radius: 10;
+    -fx-border-radius: 0;
     -fx-border-width: 2;
-    -fx-background-radius: 12;
+    -fx-background-radius: 0;
     -fx-background-insets: 1;
 }
-
-    Button:pressed {
-        -fx-background-color: secondColor;
+    Button:hover{
+        -fx-cursor: hand;
     }
+
+/* Button Styles */
+
+.buttonStandard {
+    -fx-border-color: fourthColor;
+    -fx-background-color: secondColor;
+    -fx-text-fill: fourthColor;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-family: "Source Code Pro";
+}
+    .buttonStandard:pressed{
+        -fx-background-color: fourthColor;
+        -fx-text-fill: primaryColor;
+    }
+
+.buttonLightStandard {
+    -fx-border-color: secondColor;
+    -fx-background-color: transparent;
+    -fx-text-fill: secondColor;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-family: "Source Code Pro";
+}
+    .buttonLightStandard:pressed{
+        -fx-background-color: secondColor;
+        -fx-border-color: secondColor;
+        -fx-text-fill: fourthColor;
+    }
+
+
+/* Font Styles */
+
+
+
+
+/* Header CSS */
+
+.headerBackground {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-background-color: fifthColor;
+    -fx-pref-height: 50;
+    -fx-border-color: fifthColor;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, white, 50, 0, 0, 0);
+}

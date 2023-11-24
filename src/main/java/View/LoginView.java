@@ -25,8 +25,7 @@ public class LoginView extends ViewClass{
 
     private TextField usernameField, passwordField;
     private Button loginButton, createUserButton;
-
-    private LoginLogic logic = new LoginLogic(this);
+    private LoginLogic logic = new LoginLogic(this); // Connects to the logic.
 
     public LoginView(){
 
@@ -48,8 +47,10 @@ public class LoginView extends ViewClass{
         passwordField.setPromptText("Password");
         passwordField.getStyleClass().addAll("textField");
 
-        loginButton = new Button("Login");
-        createUserButton = new Button("New User");
+        loginButton = new Button("LOGIN");
+        loginButton.getStyleClass().addAll("fontButton", "buttonStandard");
+        createUserButton = new Button("NEW USER");
+        createUserButton.getStyleClass().addAll("fontButton", "buttonStandard");
 
         HBox hBox = new HBox(loginButton, createUserButton);
         hBox.setAlignment(Pos.CENTER);
@@ -62,6 +63,5 @@ public class LoginView extends ViewClass{
         function.alignObjectCenter( sceneMidWi, sceneMidHi, vBox);
 
         root.getChildren().add(vBox);
-        root.getStyleClass().addAll("root", "var");
     }
 }

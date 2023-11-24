@@ -1,8 +1,9 @@
 @import "mainStyle.css";
 
 
-.textField {
-
+TextField {
+    -fx-background-color: primaryColor;
+    -fx-border-color: fourthColor;
 }
 
 .vbox{
