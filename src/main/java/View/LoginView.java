@@ -18,7 +18,7 @@ public class LoginView extends ViewClass{
 
     public Scene getScene();
     public Group getRoot();
-    protected setScene();
+    protected setScene( String );
 
      */
 
@@ -62,6 +62,6 @@ public class LoginView extends ViewClass{
         function.alignObjectCenter( sceneMidWi, sceneMidHi, vBox);
 
         root.getChildren().add(vBox);
-        root.getStyleClass().add("root");
+        root.getStyleClass().addAll("root", "var");
     }
 }

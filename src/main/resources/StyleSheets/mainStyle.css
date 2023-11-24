@@ -1,0 +1,35 @@
+.var{
+
+    primaryColor: white;
+    secondColor: #448ef3; /* blue 2179f1 */
+    thirdColor: #041E42; /* Navy */
+    fourthColor: #dfecfd; /* Light Blue */
+    backColor: #91bcf8;
+}
+
+.root{
+    -fx-background-color: backColor;
+}
+
+TextField {
+
+    -fx-border-color: thirdColor;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-color: primaryColor;
+    -fx-background-radius: 12;
+    -fx-background-insets: 1;
+}
+
+Button {
+    -fx-background-color: fourthColor;
+    -fx-border-color: thirdColor;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+    -fx-background-radius: 12;
+    -fx-background-insets: 1;
+}
+
+    Button:pressed {
+        -fx-background-color: secondColor;
+    }

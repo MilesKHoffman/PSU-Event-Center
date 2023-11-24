@@ -35,7 +35,7 @@ public class ViewClass {
         scene = new Scene(root, sceneWidth, sceneHeight);
 
         // Adds a css file to the scene.
-        URL css = getClass().getResource("/StyleSheets/" + styleSheet);
+        URL css = getClass().getResource("/StyleSheets/" + styleSheet );
         scene.getStylesheets().add( css.toExternalForm() );
     }
 }
