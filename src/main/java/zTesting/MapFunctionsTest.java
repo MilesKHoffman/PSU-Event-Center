@@ -1,4 +1,4 @@
-package com.example;
+package zTesting;
 
 import javafx.animation.Timeline;
 import javafx.application.Application;

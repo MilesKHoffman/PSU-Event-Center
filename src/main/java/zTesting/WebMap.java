@@ -1,4 +1,4 @@
-package com.example;
+package zTesting;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
