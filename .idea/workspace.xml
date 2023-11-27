@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CreateUserLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CreateUserLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/BaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zTesting/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zTesting/demo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +33,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -82,7 +73,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaseView">
+  <component name="RunManager" selected="Application.WebMap">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
@@ -97,10 +88,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zTesting.WebMap" />
+      <module name="SWENG-411-Proj-JavaFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BaseView" />
       <item itemvalue="Application.UI_Testing" />
+      <item itemvalue="Application.WebMap" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebMap" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
