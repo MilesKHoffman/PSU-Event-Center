@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Updates to loginview, css, Functions, and Homescreen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Old__Test",
+    "git-widget-placeholder": "WorkBranch2",
     "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/View",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",

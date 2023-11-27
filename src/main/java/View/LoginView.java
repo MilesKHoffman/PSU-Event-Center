@@ -51,6 +51,7 @@ public class LoginView extends ViewClass{
         loginButton = new Button("LOGIN");
         loginButton.getStyleClass().addAll("fontButton", "buttonStandard");
 
+        // Function to change views
         loginButton.setOnAction( actionEvent -> {
             new ViewController( new HomescreenView() ).showView();
         });
