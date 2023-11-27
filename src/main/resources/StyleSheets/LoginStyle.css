@@ -3,7 +3,7 @@
 
 TextField {
     -fx-background-color: primaryColor;
-    -fx-border-color: fourthColor;
+    -fx-border-color: fifthColor;
 }
 
 .vbox{

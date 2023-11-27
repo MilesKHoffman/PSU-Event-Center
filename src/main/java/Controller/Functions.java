@@ -2,6 +2,7 @@ package Controller;
 
 import javafx.application.Platform;
 import javafx.scene.Node;
+import javafx.scene.control.Control;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
@@ -19,12 +20,49 @@ public class Functions {
         });
     }
 
-    // Sets all buttons in a group to the style inputted. -MH
-    public void setCollectionButtonStyle(Region group, String style ){
+    // Sets all nodes of selected type in a group to the style inputted. -MH
+    public void setCollectionInputStyle(Region group, Node input, String[] style ){
 
-        group.getChildrenUnmodifiable().forEach( Button -> {
+        for( String css : style ){
 
-            Button.getStyleClass().addAll(style);
-        });
+            group.getChildrenUnmodifiable().forEach( node -> {
+
+                if( node.getClass().isInstance(input) ){
+                    node.getStyleClass().addAll(css);
+                }
+
+                if (node instanceof Region) {
+                    setCollectionInputStyle((Region) node, input, new String[]{css} );
+                }
+            });
+        }
     }
+
+
+    /*
+    switch( input ) {
+
+            case "Label":
+                group.getChildrenUnmodifiable().forEach( Label -> {
+
+                    Label.getStyleClass().addAll(style);
+                });
+
+            case "Button":
+                group.getChildrenUnmodifiable().forEach( Button -> {
+
+                    Button.getStyleClass().addAll(style);
+                });
+
+            case "TextField":
+                group.getChildrenUnmodifiable().forEach( TextField -> {
+
+                    TextField.getStyleClass().addAll(style);
+                });
+
+            default:
+                System.out.println("ERROR...setCollectionInputStyle argument 'input' not recognized...");
+                System.exit(-1);
+        }
+     */
 }

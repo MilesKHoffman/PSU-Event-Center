@@ -27,6 +27,7 @@ public class ViewClass {
     protected final double sceneHeight = 600;
     protected final double sceneMidWi = sceneWidth / 2.0;
     protected final double sceneMidHi = sceneHeight / 2.0;
+    protected final double headerHeight = 50.0;
 
 
     public ViewClass(){
@@ -56,18 +57,19 @@ public class ViewClass {
         Sets the header with MyEvents, AllEvents, Home, Announcements.
          */
 
-        Button myEventButton = new Button("My Events");
-        Button allEventButton = new Button("All Events");
-        Button homeButton = new Button("Home");
-        Button announceButton = new Button("Announcements");
+        Button myEventButton = new Button("MY EVENTS");
+        Button searchEventButton = new Button("SEARCH EVENTS");
+        Button homeButton = new Button("HOME");
+        Button mapButton = new Button("EVENT MAP");
 
-        HBox hbox = new HBox(myEventButton, allEventButton, homeButton, announceButton);
+        HBox hbox = new HBox(homeButton, myEventButton, searchEventButton, mapButton);
         hbox.setPrefWidth(sceneWidth);
+        hbox.setPrefHeight(headerHeight);
         hbox.getStyleClass().add("headerBackground");
         hbox.setAlignment(Pos.TOP_CENTER);
 
         Functions function = new Functions();
-        function.setCollectionButtonStyle(hbox, "buttonLightStandard");
+        function.setCollectionInputStyle(hbox, new Button(), new String[]{"buttonLightStandard"});
 
 
         VBox vbox = new VBox(hbox);

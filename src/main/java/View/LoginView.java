@@ -2,6 +2,7 @@ package View;
 
 import Controller.Functions;
 import Controller.LoginLogic;
+import Controller.ViewController;
 import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -49,6 +50,11 @@ public class LoginView extends ViewClass{
 
         loginButton = new Button("LOGIN");
         loginButton.getStyleClass().addAll("fontButton", "buttonStandard");
+
+        loginButton.setOnAction( actionEvent -> {
+            new ViewController( new HomescreenView() ).showView();
+        });
+
         createUserButton = new Button("NEW USER");
         createUserButton.getStyleClass().addAll("fontButton", "buttonStandard");
 

@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Updates to loginview.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/HeaderLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" afterDir="false" />
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Updates to loginview, css, Functions, and Homescreen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/HomescreenLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" afterDir="false" />
     </list>
@@ -31,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dac43698ac5515e1668cebf761177f4ad363f10b" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -52,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "WorkBranch",
+    "git-widget-placeholder": "Old__Test",
     "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/View",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -78,7 +80,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UI_Testing">
+  <component name="RunManager" selected="Application.BaseView">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
@@ -107,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700794103249</updated>
       <workItem from="1700794104439" duration="14027000" />
-      <workItem from="1700842470612" duration="11676000" />
+      <workItem from="1700842470612" duration="24716000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -123,15 +125,34 @@
       <option name="project" value="LOCAL" />
       <updated>1700846156199</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updates to loginview, css, Functions, and Homescreen">
+      <created>1700854641970</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700854641970</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Blank" />
     <MESSAGE value="Updates to loginview." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to loginview." />
+    <MESSAGE value="Updates to loginview, css, Functions, and Homescreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to loginview, css, Functions, and Homescreen" />
   </component>
 </project>
