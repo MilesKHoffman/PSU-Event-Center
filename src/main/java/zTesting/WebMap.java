@@ -13,8 +13,8 @@ public class WebMap extends Application {
     @Override
     public void start(Stage stage) {
 
-        File url = new File("C:\\1. School\\SWENG  411\\DemoFX\\demoFX\\src\\main\\" +
-                "java\\TestFiles\\demo.html");
+        String dir = System.getProperty("user.dir");
+        File url = new File( dir + "/src/main/java/zTesting/demo.html" );
 
         // Create a WebView
         WebView webView = new WebView();
