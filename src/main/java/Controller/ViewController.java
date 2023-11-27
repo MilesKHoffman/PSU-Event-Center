@@ -5,6 +5,7 @@ import View.*;
 public class ViewController {
 
     private static BaseView baseView;
+
     private ViewClass view;
 
     public ViewController( ViewClass view ){

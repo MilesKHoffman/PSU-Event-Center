@@ -71,6 +71,7 @@ public class LoginView extends ViewClass{
     private void setHandlers(){
 
         loginButton.setOnAction( actionEvent -> {
+            // Call loginLogic.SetUser( String username, String pass );
             new ViewController( new HomescreenView() ).showView();
         });
 

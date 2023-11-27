@@ -24,7 +24,10 @@ public class WebMap extends Application {
         webEngine.load(url.toURI().toString());
 
         // Create a scene and add the WebView to it
+        webView.setPrefSize(500,500);
         Scene scene = new Scene(webView, 800, 600);
+        stage.setMaxHeight(800);
+        stage.setMaxWidth(600);
 
         // Set up the primary stage
         stage.setTitle("WebView File Demo");

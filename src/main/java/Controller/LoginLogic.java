@@ -12,4 +12,6 @@ public class LoginLogic extends LogicInter{
     }
 
 
+    // setUsere( ... ){ MongoLogic.verifyLogin( ... );
+    // Create User.getUser().setMyEvents( MongoLogic.GetUserEvents() );
 }
