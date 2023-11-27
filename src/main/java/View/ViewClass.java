@@ -28,10 +28,12 @@ public class ViewClass {
     protected final double sceneMidWi = sceneWidth / 2.0;
     protected final double sceneMidHi = sceneHeight / 2.0;
     protected final double headerHeight = 50.0;
+    private boolean header = true;
 
 
     public ViewClass(){
         root = new Pane();
+        setHeader();
     }
 
     public Scene getScene() {
@@ -71,10 +73,15 @@ public class ViewClass {
         Functions function = new Functions();
         function.setCollectionInputStyle(hbox, new Button(), new String[]{"buttonLightStandard"});
 
-
         VBox vbox = new VBox(hbox);
 
-
         root.getChildren().add(vbox);
+    }
+
+    protected void removeHeader(){
+        if( header ) {
+            root.getChildren().remove(0);
+            header = !header;
+        }
     }
 }

@@ -30,7 +30,6 @@ public class HomescreenView extends ViewClass{
 
         super();
 
-        setHeader();
         setVars();
         setScene("HomeStyle.css");
     }

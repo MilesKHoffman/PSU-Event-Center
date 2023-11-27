@@ -4,8 +4,10 @@
 TextField {
     -fx-background-color: primaryColor;
     -fx-border-color: fifthColor;
+    -fx-pref-width: 180;
 }
 
 .vbox{
     -fx-spacing: 10;
+    -fx-translate-y: 210;
 }

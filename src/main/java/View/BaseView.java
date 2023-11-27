@@ -13,8 +13,7 @@ public class BaseView extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        LoginView loginView = new LoginView();
-        viewC = new ViewController( loginView );
+        viewC = new ViewController( new LoginView() );
         viewC.setBaseView( this );
 
         stage = new Stage();

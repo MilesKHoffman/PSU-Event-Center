@@ -6,8 +6,11 @@
     fourthColor: #448ef3; /* Navy */
     fifthColor: #0A4AA2; /* Light Blue */
     sixthColor: #041E42;
-
     backColor: #91bcf8;
+
+
+    sceneWidth: 800;
+    sceneHeight: 600;
 }
 
 .root{

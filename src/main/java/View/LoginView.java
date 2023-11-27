@@ -3,7 +3,6 @@ package View;
 import Controller.Functions;
 import Controller.LoginLogic;
 import Controller.ViewController;
-import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -32,9 +31,12 @@ public class LoginView extends ViewClass{
 
         super();
 
+        removeHeader();
         setVars();
+        setHandlers();
         setScene("LoginStyle.css");
     }
+
 
     protected void setVars(){
 
@@ -42,19 +44,13 @@ public class LoginView extends ViewClass{
 
         usernameField = new TextField();
         usernameField.setPromptText("Username");
-        usernameField.getStyleClass().addAll("textField");
 
         passwordField = new TextField();
         passwordField.setPromptText("Password");
-        passwordField.getStyleClass().addAll("textField");
 
         loginButton = new Button("LOGIN");
         loginButton.getStyleClass().addAll("fontButton", "buttonStandard");
 
-        // Function to change views
-        loginButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView() ).showView();
-        });
 
         createUserButton = new Button("NEW USER");
         createUserButton.getStyleClass().addAll("fontButton", "buttonStandard");
@@ -67,8 +63,19 @@ public class LoginView extends ViewClass{
         vBox.getChildren().addAll(usernameField,passwordField, hBox);
         vBox.getStyleClass().addAll("vbox");
 
-        function.alignObjectCenter( sceneMidWi, sceneMidHi, vBox);
+        function.setObjectCenterX( sceneMidWi, vBox);
 
         root.getChildren().add(vBox);
+    }
+
+    private void setHandlers(){
+
+        loginButton.setOnAction( actionEvent -> {
+            new ViewController( new HomescreenView() ).showView();
+        });
+
+        createUserButton.setOnAction( actionEvent -> {
+            new ViewController( new CreateUserView() ).showView();
+        });
     }
 }

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Updates to loginview, css, Functions, and Homescreen">
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zTesting/WebMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zTesting/WebMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CreateUserLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CreateUserLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Functions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/BaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/LoginStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,25 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "WorkBranch2",
-    "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/View",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.15189874",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;WorkBranch2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/View&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.15189874&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\View" />
@@ -74,7 +82,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BaseView">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
@@ -104,6 +112,7 @@
       <updated>1700794103249</updated>
       <workItem from="1700794104439" duration="14027000" />
       <workItem from="1700842470612" duration="24716000" />
+      <workItem from="1701098458791" duration="2768000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -133,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701045095503</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Work">
+      <created>1701048838629</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701048838629</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +170,7 @@
     <MESSAGE value="Blank" />
     <MESSAGE value="Updates to loginview." />
     <MESSAGE value="Updates to loginview, css, Functions, and Homescreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to loginview, css, Functions, and Homescreen" />
+    <MESSAGE value="Work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work" />
   </component>
 </project>
