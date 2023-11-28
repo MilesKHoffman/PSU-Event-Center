@@ -34,48 +34,8 @@ public class HomescreenView extends ViewClass{
 
         super();
 
-        //setVars();
         drawAllEvents(logic.getEventList());
         setScene("HomeStyle.css");
-    }
-
-    private void setVars(){
-
-        /*Functions function = new Functions();
-
-        Label upcomingLabel = new Label("UPCOMING EVENTS");
-        TilePane upcomingTilesP = new TilePane();
-        for( int i : new int[50] ){
-            upcomingTilesP.getChildren().add( new Button("TESTING"));
-        }
-        function.setCollectionInputStyle(upcomingTilesP, new Button(), new String[]{"center"});
-        ScrollPane upcomingScroll = new ScrollPane( upcomingTilesP );
-
-        VBox upcomingVbox = new VBox( upcomingLabel, upcomingScroll);
-        upcomingVbox.setPrefWidth(sceneMidWi);
-        upcomingVbox.getStyleClass().add("splitVBox");
-
-        Label myEventsLabel = new Label("MY EVENTS");
-        TilePane myEventsTileP = new TilePane();
-        for( int i : new int[50]){
-            myEventsTileP.getChildren().add( new Button("TESTING"));
-        }
-        ScrollPane myEventScroll = new ScrollPane( myEventsTileP );
-
-
-        VBox myEventsVbox = new VBox(myEventsLabel, myEventScroll);
-        myEventsVbox.setPrefWidth(sceneMidWi);
-        myEventsVbox.getStyleClass().add("splitVBox");
-
-        HBox split = new HBox(upcomingVbox, myEventsVbox);
-        split.getStyleClass().add("container");
-        split.setMaxWidth(sceneWidth);
-        split.setMaxHeight(sceneHeight - headerHeight);
-        split.setLayoutY(headerHeight);
-
-        function.setCollectionInputStyle(split, new Label(), new String[]{"fontHeader1"});
-
-        root.getChildren().add(split);*/
     }
     public void drawAllEvents(ArrayList<Event> events) {
         Functions function = new Functions();
@@ -97,7 +57,7 @@ public class HomescreenView extends ViewClass{
         Label myEventsLabel = new Label("MY EVENTS");
         TilePane myEventsTileP = new TilePane();
         for( Event e : events){
-            myEventsTileP.getChildren().add( new Button(e.getName()));
+            myEventsTileP.getChildren().add( new Button(e.getName() + "\n" + e.getDesc()));
         }
         ScrollPane myEventScroll = new ScrollPane( myEventsTileP );
 

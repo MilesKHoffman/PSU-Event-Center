@@ -2,6 +2,7 @@ package View;
 
 import Controller.Functions;
 import Controller.LogicInter;
+import Controller.ViewController;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -63,6 +64,11 @@ public class ViewClass {
         Button searchEventButton = new Button("SEARCH EVENTS");
         Button homeButton = new Button("HOME");
         Button mapButton = new Button("EVENT MAP");
+
+
+        mapButton.setOnAction( actionEvent -> {
+            new ViewController( new MapView() ).showView();
+        });
 
         HBox hbox = new HBox(homeButton, myEventButton, searchEventButton, mapButton);
         hbox.setPrefWidth(sceneWidth);
