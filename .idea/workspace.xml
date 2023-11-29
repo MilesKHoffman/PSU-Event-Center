@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/MapStyle.css" afterDir="false" />
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="event map added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/EventView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/EventStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MapView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zTesting/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zTesting/demo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +41,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2YbV7eKgknRdgbWaZZAvbT8JoAT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -131,7 +131,8 @@
       <workItem from="1700794104439" duration="14027000" />
       <workItem from="1700842470612" duration="24716000" />
       <workItem from="1701098458791" duration="2768000" />
-      <workItem from="1701147958696" duration="2437000" />
+      <workItem from="1701147958696" duration="3335000" />
+      <workItem from="1701206935938" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -184,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701124969078</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="event map added">
+      <option name="closed" value="true" />
+      <created>1701150686152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701150686152</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +215,7 @@
     <MESSAGE value="Updates to loginview." />
     <MESSAGE value="Updates to loginview, css, Functions, and Homescreen" />
     <MESSAGE value="Work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work" />
+    <MESSAGE value="event map added" />
+    <option name="LAST_COMMIT_MESSAGE" value="event map added" />
   </component>
 </project>

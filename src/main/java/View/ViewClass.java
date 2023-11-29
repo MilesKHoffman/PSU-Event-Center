@@ -62,10 +62,16 @@ public class ViewClass {
 
         Button myEventButton = new Button("MY EVENTS");
         Button searchEventButton = new Button("SEARCH EVENTS");
-        Button homeButton = new Button("HOME");
+        Button homeButton = new Button("ALL EVENTS");
         Button mapButton = new Button("EVENT MAP");
 
+        myEventButton.setOnAction( actionEvent -> {
+            new ViewController( new HomescreenView("myEvents") ).showView();
+        });
 
+        homeButton.setOnAction( actionEvent -> {
+            new ViewController( new HomescreenView("allEvents") ).showView();
+        });
         mapButton.setOnAction( actionEvent -> {
             new ViewController( new MapView() ).showView();
         });

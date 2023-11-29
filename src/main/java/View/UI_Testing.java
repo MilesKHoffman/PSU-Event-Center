@@ -12,10 +12,10 @@ public class UI_Testing extends Application {
     public void start(Stage primaryStage) throws Exception {
 
 
-        HomescreenView homeView = new HomescreenView();
+        //HomescreenView homeView = new HomescreenView();
 
         stage = new Stage();
-        setStageScene( homeView.getScene() );
+        //setStageScene( homeView.getScene() );
         stage.setTitle("SWENG 411 Proj");
         stage.show();
     }
