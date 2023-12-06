@@ -66,11 +66,11 @@ public class ViewClass {
         Button mapButton = new Button("EVENT MAP");
 
         myEventButton.setOnAction( actionEvent -> {
-            new ViewController( new EventView("myEvents") ).showView();
+            new ViewController( new EventView(false) ).showView();
         });
 
         allEventButton.setOnAction( actionEvent -> {
-            new ViewController( new EventView( "allEvents" )).showView();
+            new ViewController( new EventView( true )).showView();
         });
 
         homeButton.setOnAction( actionEvent -> {

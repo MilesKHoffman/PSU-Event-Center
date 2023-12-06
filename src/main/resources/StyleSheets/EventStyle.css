@@ -1,1 +1,27 @@
 @import "mainStyle.css";
+
+VBox {
+    -fx-background-color: transparent;
+}
+
+TilePane {
+    -fx-border-color: black;
+    -fx-pref-columns: 1;
+    -fx-vgap: 10;
+}
+
+.eventVert {
+    -fx-border-color: null;
+    -fx-border-width: 2;
+    -fx-alignment: TOP_CENTER;
+    -fx-padding: 20;
+}
+
+.container {
+    -fx-padding: 0;
+    -fx-spacing:  0;
+}
+
+.center {
+
+}
