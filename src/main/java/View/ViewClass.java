@@ -61,22 +61,26 @@ public class ViewClass {
          */
 
         Button myEventButton = new Button("MY EVENTS");
-        Button searchEventButton = new Button("SEARCH EVENTS");
-        Button homeButton = new Button("ALL EVENTS");
+        Button allEventButton = new Button("ALL EVENTS");
+        Button homeButton = new Button("HOME");
         Button mapButton = new Button("EVENT MAP");
 
         myEventButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView("myEvents") ).showView();
+            new ViewController( new EventView("myEvents") ).showView();
+        });
+
+        allEventButton.setOnAction( actionEvent -> {
+            new ViewController( new EventView( "allEvents" )).showView();
         });
 
         homeButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView("allEvents") ).showView();
+            new ViewController( new HomescreenView() ).showView();
         });
         mapButton.setOnAction( actionEvent -> {
             new ViewController( new MapView() ).showView();
         });
 
-        HBox hbox = new HBox(homeButton, myEventButton, searchEventButton, mapButton);
+        HBox hbox = new HBox(homeButton, myEventButton, allEventButton, mapButton);
         hbox.setPrefWidth(sceneWidth);
         hbox.setPrefHeight(headerHeight);
         hbox.getStyleClass().add("headerBackground");

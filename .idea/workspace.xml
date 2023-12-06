@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="event map added">
-      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MongoLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MongoLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MapView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EventViewLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dac43698ac5515e1668cebf761177f4ad363f10b" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
