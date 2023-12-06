@@ -54,7 +54,7 @@ public class ViewClass {
         root.getStyleClass().addAll("root", "var");
     }
 
-    protected void setHeader(){
+    private void setHeader(){
 
         /*
         Sets the header with MyEvents, AllEvents, Home, Announcements.
