@@ -4,11 +4,11 @@ import View.*;
 
 public class ViewController {
 
-    private static BaseView baseView;
+    private static BaseView newBaseView;
 
     private ViewClass view;
 
-    public ViewController( ViewClass view ){
+    public ViewController(ViewClass view ){
         setView(view);
     }
 
@@ -17,11 +17,11 @@ public class ViewController {
     }
 
     public void setBaseView( BaseView bView ){
-        baseView = bView;
+        newBaseView = bView;
     }
 
     public void showView(){
 
-        baseView.setStageScene( view.getScene() );
+        newBaseView.setStageScene( view.getScene() );
     }
 }

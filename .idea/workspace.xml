@@ -4,31 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="event map added">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/CreateEventLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EventViewLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" afterDir="false" />
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="reworking ui">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EventEditorLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewCreateEventLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewCreateUserLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventEditorLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventViewLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewHeaderNewLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewHomescreenLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewLogicInter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewLoginLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewMapLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewBaseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateUserView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewEventEditorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewEventView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewHomescreenView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewLoginView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewMapView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewUI_Testing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewViewClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/EventEditorStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CreateUserLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CreateUserLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HomescreenLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/HomescreenLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MapLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MapLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Announcement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EventEditorView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MongoLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventEditorView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/MapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MapView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zTesting/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zTesting/demo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +94,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "WorkBranch2",
-    "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/View",
+    "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/NewController",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -98,20 +114,34 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\NewController" />
+      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java" />
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\View" />
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src" />
-      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java" />
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\zTesting" />
-      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\com\example\sweng411projjavafx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chase\IdeaProjects\SWENG 411 ASSIGNMENTS\SWENG-411-Proj-JavaFX\src\main\java\Repository" />
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaseView">
+  <component name="RunManager" selected="Application.NewUI_Test">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
+      <module name="SWENG-411-Proj-JavaFX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewUI_Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="NewView.NewUI_Testing" />
+      <module name="SWENG-411-Proj-JavaFX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewViews" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="NewView.NewBaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,6 +169,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.BaseView" />
+      <item itemvalue="Application.NewViews" />
+      <item itemvalue="Application.NewUI_Test" />
       <item itemvalue="Application.UI_Testing" />
       <item itemvalue="Application.WebMap" />
     </list>
@@ -256,6 +288,7 @@
     <MESSAGE value="Updates to loginview, css, Functions, and Homescreen" />
     <MESSAGE value="Work" />
     <MESSAGE value="event map added" />
-    <option name="LAST_COMMIT_MESSAGE" value="event map added" />
+    <MESSAGE value="reworking ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="reworking ui" />
   </component>
 </project>

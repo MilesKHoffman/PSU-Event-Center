@@ -2,7 +2,6 @@ package View;
 
 import Controller.CreateUserLogic;
 import Controller.Functions;
-import Controller.ViewController;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -20,7 +19,7 @@ import javafx.scene.layout.VBox;
 
      */
 
-public class CreateUserView extends ViewClass{
+public class CreateUserView extends ViewClass {
 
     private TextField usernameField, passwordField;
     private Button createButton, returnButton;

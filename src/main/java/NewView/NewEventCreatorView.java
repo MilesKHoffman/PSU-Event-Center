@@ -1,21 +1,22 @@
-package View;
+package NewView;
 
-import Controller.EventEditorLogic;
+import NewController.NewEventEditorLogic;
+import View.ViewClass;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
-public class EventEditorView extends ViewClass {
+public class NewEventCreatorView extends ViewClass {
 
-    EventEditorLogic logic = new EventEditorLogic( this );
+    NewEventEditorLogic logic = new NewEventEditorLogic( this );
 
     private TextField nameBox, descBox, locationBox, addressBox, clubBox;
     private ComboBox<String> categoryCombo;
     private DatePicker datePicker;
 
 
-    public EventEditorView() {
+    public NewEventCreatorView() {
         super();
 
         setVars();

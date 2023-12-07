@@ -1,18 +1,18 @@
-package View;
+package NewView;
 
-import NewView.NewHomescreenView;
+import View.EventEditorView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class UI_Testing extends Application {
+public class NewUI_Testing extends Application {
 
     private Stage stage;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        NewHomescreenView view = new NewHomescreenView("allEvents");
+        EventEditorView view = new EventEditorView();
 
         stage = new Stage();
         setStageScene( view.getScene() );

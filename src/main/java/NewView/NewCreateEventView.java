@@ -1,21 +1,22 @@
-package View;
+package NewView;
 
-import Controller.CreateEventLogic;
 import Model.Map;
+import NewController.NewCreateEventLogic;
+import View.ViewClass;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
-public class CreateEventView extends ViewClass {
+public class NewCreateEventView extends ViewClass {
 
-    private CreateEventLogic logic = new CreateEventLogic(this);
+    private NewCreateEventLogic logic = new NewCreateEventLogic(this);
 
     private TextField eventName, eventDateTime;
     private TextArea eventDesc;
     private Button submitButton;
 
-    public CreateEventView() {
+    public NewCreateEventView() {
         super();
 
         drawScreen();

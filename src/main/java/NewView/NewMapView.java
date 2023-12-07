@@ -1,13 +1,15 @@
-package View;
+package NewView;
 
 import Controller.MapLogic;
 import Model.Map;
+import NewController.NewMapLogic;
+import View.ViewClass;
 import javafx.scene.layout.VBox;
 
-public class MapView extends ViewClass {
+public class NewMapView extends ViewClass {
 
-    private MapLogic logic = new MapLogic(this);
-    public MapView() {
+    private NewMapLogic logic = new NewMapLogic(this);
+    public NewMapView() {
 
         super();
 

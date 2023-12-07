@@ -1,21 +1,25 @@
-package View;
+package NewView;
 
-import NewView.NewHomescreenView;
+import Controller.*;
+import NewController.NewViewController;
+import View.LoginView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class UI_Testing extends Application {
+public class NewBaseView extends Application {
 
     private Stage stage;
+    NewViewController viewC;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        NewHomescreenView view = new NewHomescreenView("allEvents");
+        viewC = new NewViewController( new LoginView() );
+        viewC.setBaseView( this );
 
         stage = new Stage();
-        setStageScene( view.getScene() );
+        viewC.showView();
         stage.setTitle("SWENG 411 Proj");
         stage.show();
     }

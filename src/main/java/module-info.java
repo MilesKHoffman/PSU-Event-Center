@@ -11,4 +11,6 @@ module com.example.sweng411projjavafx {
     exports Controller;
     exports Model;
     exports View;
+    exports NewView;
+    exports NewController;
 }

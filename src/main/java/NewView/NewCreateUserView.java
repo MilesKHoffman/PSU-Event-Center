@@ -1,16 +1,16 @@
-package View;
+package NewView;
 
+import Controller.CreateUserLogic;
 import Controller.Functions;
-import Controller.LoginLogic;
+import NewController.NewCreateUserLogic;
+import View.ViewClass;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class LoginView extends ViewClass {
-
-    /* Here are the parent variables/methods:
+/* Here are the parent variables/methods:
 
     protected Scene scene;
     protected Group root;
@@ -21,26 +21,26 @@ public class LoginView extends ViewClass {
 
      */
 
+public class NewCreateUserView extends ViewClass {
 
     private TextField usernameField, passwordField;
-    private Button loginButton, createUserButton;
-    private LoginLogic logic = new LoginLogic(this); // Connects to the logic.
+    private Button createButton, returnButton;
+    private NewCreateUserLogic logic = new NewCreateUserLogic( this );
 
-    public LoginView(){
+    public NewCreateUserView() {
 
         super();
 
         removeHeader();
         setVars();
 
-        logic.setLoginHandler();
-        logic.setCreateUserHandler();
+        logic.setCreateHandler();
+        logic.setReturnHandler();
         //setHandlers();
         setScene("LoginStyle.css");
     }
 
-
-    protected void setVars(){
+    private void setVars(){
 
         Functions function = new Functions();
 
@@ -50,14 +50,14 @@ public class LoginView extends ViewClass {
         passwordField = new TextField();
         passwordField.setPromptText("Password");
 
-        loginButton = new Button("LOGIN");
-        loginButton.getStyleClass().addAll("fontButton", "buttonStandard");
+        createButton = new Button("CREATE USER");
+        createButton.getStyleClass().addAll("fontButton", "buttonStandard");
 
 
-        createUserButton = new Button("NEW USER");
-        createUserButton.getStyleClass().addAll("fontButton", "buttonStandard");
+        returnButton = new Button("GO BACK");
+        returnButton.getStyleClass().addAll("fontButton", "buttonStandard");
 
-        HBox hBox = new HBox(loginButton, createUserButton);
+        HBox hBox = new HBox(createButton, returnButton);
         hBox.setAlignment(Pos.CENTER);
         hBox.setSpacing(10);
 
@@ -72,13 +72,12 @@ public class LoginView extends ViewClass {
 
     /*private void setHandlers(){
 
-        loginButton.setOnAction( actionEvent -> {
-            // Call loginLogic.SetUser( String username, String pass );
-            new ViewController( new HomescreenView() ).showView();
+        createButton.setOnAction( actionEvent -> {
+            new ViewController( new LoginView() ).showView();
         });
 
-        createUserButton.setOnAction( actionEvent -> {
-            new ViewController( new CreateUserView() ).showView();
+        returnButton.setOnAction( actionEvent -> {
+            new ViewController( new LoginView() ).showView();
         });
     }*/
 
@@ -90,11 +89,11 @@ public class LoginView extends ViewClass {
         return passwordField;
     }
 
-    public Button getLoginButton() {
-        return loginButton;
+    public Button getCreateButton() {
+        return createButton;
     }
 
-    public Button getCreateUserButton() {
-        return createUserButton;
+    public Button getReturnButton() {
+        return returnButton;
     }
 }

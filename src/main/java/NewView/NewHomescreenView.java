@@ -1,9 +1,10 @@
-package View;
+package NewView;
 
 import Controller.Functions;
-import Controller.HomescreenLogic;
 import Model.Event;
 import Model.Map;
+import NewController.NewHomescreenLogic;
+import View.ViewClass;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -11,11 +12,11 @@ import javafx.scene.layout.*;
 
 import java.util.ArrayList;
 
-public class HomescreenView extends ViewClass {
+public class NewHomescreenView extends ViewClass {
 
     private Button eventClick;
-    private HomescreenLogic logic = new HomescreenLogic( this ); // Connects to the logic -MH
-    public HomescreenView(String s) {
+    private NewHomescreenLogic logic = new NewHomescreenLogic( this ); // Connects to the logic -MH
+    public NewHomescreenView(String s) {
 
         super();
 

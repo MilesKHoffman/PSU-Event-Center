@@ -2,8 +2,6 @@ package Model;
 
 import View.ViewClass;
 import javafx.application.Platform;
-import javafx.concurrent.Worker;
-import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -12,7 +10,6 @@ import java.io.File;
 import java.util.function.Consumer;
 
 import com.google.gson.Gson;
-import netscape.javascript.JSObject;
 
 
 public class Map extends ViewClass {

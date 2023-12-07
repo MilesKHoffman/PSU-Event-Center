@@ -1,14 +1,16 @@
-package View;
+package NewView;
 
 import Controller.Functions;
 import Controller.LoginLogic;
+import NewController.NewLoginLogic;
+import View.ViewClass;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class LoginView extends ViewClass {
+public class NewLoginView extends ViewClass {
 
     /* Here are the parent variables/methods:
 
@@ -24,9 +26,9 @@ public class LoginView extends ViewClass {
 
     private TextField usernameField, passwordField;
     private Button loginButton, createUserButton;
-    private LoginLogic logic = new LoginLogic(this); // Connects to the logic.
+    private NewLoginLogic logic = new NewLoginLogic(this); // Connects to the logic.
 
-    public LoginView(){
+    public NewLoginView(){
 
         super();
 

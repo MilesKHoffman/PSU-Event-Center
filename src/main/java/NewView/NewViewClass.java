@@ -1,8 +1,11 @@
-package View;
+package NewView;
 
 import Controller.Functions;
 import Controller.ViewController;
 import Model.User;
+import View.CreateEventView;
+import View.HomescreenView;
+import View.MapView;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -12,7 +15,7 @@ import javafx.scene.layout.VBox;
 
 import java.net.URL;
 
-public class ViewClass {
+public class NewViewClass {
 
     protected Scene scene;
     protected Pane root;
@@ -24,7 +27,7 @@ public class ViewClass {
     private boolean header = true;
 
 
-    public ViewClass(){
+    public NewViewClass(){
         root = new Pane();
         setHeader();
     }
