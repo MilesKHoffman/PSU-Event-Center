@@ -16,9 +16,6 @@ public class NewEventLogic {
 
     public NewEventLogic(NewEventView view ){ this.view = view; }
 
-    NewHomescreenView homeView;
-
-
     public ArrayList<Event> getAllEvents(){
         return DatabaseHandler.getAllEvents();
     }
