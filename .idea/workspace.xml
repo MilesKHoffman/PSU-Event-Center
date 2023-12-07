@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="&#10;reworking ui">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewEventEditorLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewEventCreatorView.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701922040505</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="&#10;reworking ui">
+      <created>1701923373032</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701923373032</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

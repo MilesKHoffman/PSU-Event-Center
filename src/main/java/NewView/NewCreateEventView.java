@@ -2,6 +2,7 @@ package NewView;
 
 import Model.Map;
 import NewController.NewCreateEventLogic;
+import NewController.NewMapLogic;
 import View.ViewClass;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
