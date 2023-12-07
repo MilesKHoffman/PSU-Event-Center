@@ -3,6 +3,7 @@ package NewView;
 import Controller.Functions;
 import Controller.ViewController;
 import Model.User;
+import NewController.NewViewController;
 import View.CreateEventView;
 import View.HomescreenView;
 import View.MapView;
@@ -56,31 +57,35 @@ public class NewViewClass {
          */
 
         Button myEventButton = new Button("MY EVENTS");
+        Button allEventButton = new Button("ALL EVENTS");
         Button searchEventButton = new Button("SEARCH EVENTS");
-        Button homeButton = new Button("ALL EVENTS");
+        Button homeButton = new Button("HOME");
         Button mapButton = new Button("EVENT MAP");
         Button createEventButton = new Button("CREATE EVENT");
 
         //----------------------------------------------------------------------------
         myEventButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView("myEvents") ).showView();
+            new NewViewController( new NewEventView( false )).showView();
+        });
+        allEventButton.setOnAction( actionEvent -> {
+            new NewViewController( new NewEventView( true )).showView();
         });
         searchEventButton.setOnAction( actionEvent -> {
             //test case for now
             System.out.println("Search button clicked");
         });
         homeButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView("allEvents") ).showView();
+            new NewViewController( new NewHomescreenView() ).showView();
         });
         mapButton.setOnAction( actionEvent -> {
-            new ViewController( new MapView() ).showView();
+            new NewViewController( new NewMapView() ).showView();
         });
         createEventButton.setOnAction( actionEvent -> {
-            new ViewController( new CreateEventView() ).showView();
+            new NewViewController( new NewCreateEventView() ).showView();
         });
         //---------------------------------------------------------------------------
 
-        HBox hbox = new HBox(homeButton, myEventButton, searchEventButton, mapButton);
+        HBox hbox = new HBox(homeButton, myEventButton, allEventButton, searchEventButton, mapButton);
         //add create event to hbox only if the user is an admin
         if (User.getInstance().isAdmin()) {
             hbox.getChildren().add(createEventButton);

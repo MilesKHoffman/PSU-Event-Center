@@ -11,6 +11,7 @@
 
     sceneWidth: 800;
     sceneHeight: 600;
+    headerHeight: 50;
 }
 
 .root{

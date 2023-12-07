@@ -28,7 +28,7 @@ public class NewEventView extends NewViewClass {
         }
 
         drawSideMap();
-        setScene("EventStyle.css");
+        setScene("NewEventStyle.css");
     }
     public void drawSideMap() {
         VBox mapVBox = logic.getMapVBox();
