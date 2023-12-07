@@ -75,7 +75,7 @@ public class LoginView extends ViewClass{
 
         loginButton.setOnAction( actionEvent -> {
             // Call loginLogic.SetUser( String username, String pass );
-            new ViewController( new HomescreenView("allEvents") ).showView();
+            new ViewController( new HomescreenView() ).showView();
         });
 
         createUserButton.setOnAction( actionEvent -> {

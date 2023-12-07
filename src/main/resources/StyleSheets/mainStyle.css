@@ -28,6 +28,26 @@ TextField {
         -fx-font-style: normal;
     }
 
+ScrollPane {
+    -fx-background: backColor;
+    -fx-border-color: fourthColor backColor backColor backColor;
+    -fx-border-width: 5 2 2 2;
+    -fx-padding: 10 0 0 0;
+}
+    ScrollPane .scroll-bar, .increment-arrow, .decrement-arrow  {
+        -fx-background-color: backColor;
+        -fx-border-color: backColor;
+        -fx-border-width: 2;
+        -fx-padding: 2;
+    }
+
+    ScrollPane .thumb {
+        -fx-background-color: primaryColor;
+    }
+    ScrollPane .thumb:pressed {
+        -fx-background-color: secondColor;
+    }
+
 Button {
     -fx-border-radius: 0;
     -fx-border-width: 2;
