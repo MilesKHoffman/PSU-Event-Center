@@ -16,6 +16,7 @@ public class NewEventLogic {
 
     public NewEventLogic(NewEventView view ){ this.view = view; }
 
+
     public ArrayList<Event> getAllEvents(){
         return DatabaseHandler.getAllEvents();
     }
@@ -26,7 +27,7 @@ public class NewEventLogic {
 
     public void setEventClickHandler(Event e) {
         /*
-        bring up the event's larger display on the same screen.
+        bring up a larger tile of the events description below the map.
          */
     }
 }

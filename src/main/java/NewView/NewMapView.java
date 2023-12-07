@@ -4,6 +4,8 @@ import Controller.MapLogic;
 import Model.Map;
 import NewController.NewMapLogic;
 import View.ViewClass;
+import javafx.scene.layout.Border;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
 public class NewMapView extends NewViewClass {
@@ -13,7 +15,7 @@ public class NewMapView extends NewViewClass {
 
         super();
 
-        drawMap();
+        milesMap();
         setScene("MapStyle.css");
 
     }
@@ -27,5 +29,16 @@ public class NewMapView extends NewViewClass {
         mapVBox.setLayoutY(headerHeight);
 
         root.getChildren().add(mapVBox);
+    }
+
+    private void milesMap(){
+        MilesMap map = new MilesMap();
+
+        BorderPane mapPane = map.getRoot();
+
+        mapPane.setPrefHeight( sceneHeight - headerHeight);
+        mapPane.setLayoutY(headerHeight);
+
+        root.getChildren().add(mapPane);
     }
 }

@@ -1,0 +1,105 @@
+<html>
+
+   <!-- AIzaSyDSbT8vUpXDQ1nsRZQ4wzvIo_plGWJBN1s -->
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+
+  <style type="text/css">
+    html {
+      height: 100%
+    }
+
+    body {
+      height: 100%;
+      margin: 0px;
+      padding: 0px
+    }
+
+    #map_canvas {
+      height: 100%;
+      background-color: #666970;
+    }
+
+    #loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+  </style>
+
+
+  <script type="text/javascript"
+          src="https://maps.google.com/maps/api/js?key=AIzaSyDSbT8vUpXDQ1nsRZQ4wzvIo_plGWJBN1s&sensor=false&callback=Function.prototype">
+  </script>
+
+  <script type="text/javascript">
+    function initialize() {
+      var loadingOverlay = document.getElementById("loading-overlay");
+      loadingOverlay.style.display = "flex"; // Show loading overlay initially
+
+      var bounds = new google.maps.LatLngBounds(
+              new google.maps.LatLng(42.113658, -79.996182), // Southwest corner
+              new google.maps.LatLng(42.125279, -79.971211)  // Northeast corner
+      );
+
+      var latlng = new google.maps.LatLng(42.119212, -79.982995);
+
+      var myOptions = {
+        zoom: 14,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false,
+        navigationControl: false,
+        streetViewControl: false,
+        backgroundColor: "#666970",
+        draggable: false, // Disable dragging initially
+        restriction: {
+          latLngBounds: bounds,
+          strictBounds: false
+        }
+      };
+
+      document.geocoder = new google.maps.Geocoder();
+      document.map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+      document.setMapTypeRoad = function setMapTypeRoad() {
+        document.map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+      }
+      document.setMapTypeSatellite = function setMapTypeSatellite() {
+        document.map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+      }
+      document.setMapTypeHybrid = function setMapTypeHybrid() {
+        document.map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+      }
+      document.setMapTypeTerrain = function setMapTypeTerrain() {
+        document.map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
+      }
+
+      // When activated the map goes back to this latlng
+      document.resetToBehrend = function resetToBehrend() {
+        document.map.setcenter = latlng;
+      }
+
+      // Enable dragging and hide loading overlay when the map has finished loading
+      google.maps.event.addListenerOnce(document.map, 'idle', function () {
+        setTimeout(function () {
+          document.map.setOptions({ draggable: true });
+          loadingOverlay.style.display = "none";
+        }, 1000);
+      });
+    }
+  </script>
+</head>
+  <body onLoad="initialize()">
+    <div id="loading-overlay">Loading...</div>
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+</html>

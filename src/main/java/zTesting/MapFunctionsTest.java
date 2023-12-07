@@ -27,11 +27,12 @@ public class MapFunctionsTest extends Application {
     @Override
     public void start(Stage stage) {
 
+        String dir = System.getProperty("user.dir");
+        File url = new File( dir + "/src/main/java/zTesting/exampleMap.html" );
+
+        // Create a WebView
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-
-        File url = new File("C:\\1. School\\SWENG  411\\DemoFX\\demoFX\\src\\main\\" +
-                "java\\TestFiles\\demo.html");
 
         webEngine.load( url.toURI().toString() );
 
@@ -116,14 +117,14 @@ public class MapFunctionsTest extends Application {
                 new Label("Location:"), zoomIn, zoomOut);
         // create root
         BorderPane root = new BorderPane();
-        root.getStyleClass().add("map");
+        //root.getStyleClass().add("map");
         root.setCenter(webView);
         root.setTop(toolBar);
         // create scene
         stage.setTitle("Web Map");
         Scene scene = new Scene(root,1000,700, Color.web("#666970"));
         stage.setScene(scene);
-        scene.getStylesheets().add("/webmap/WebMap.css");
+        //scene.getStylesheets().add("/webmap/WebMap.css");
         // show stage
         stage.show();
     }
