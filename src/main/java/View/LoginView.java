@@ -33,7 +33,10 @@ public class LoginView extends ViewClass{
 
         removeHeader();
         setVars();
-        setHandlers();
+
+        logic.setLoginHandler();
+        logic.setCreateUserHandler();
+        //setHandlers();
         setScene("LoginStyle.css");
     }
 
@@ -68,7 +71,7 @@ public class LoginView extends ViewClass{
         root.getChildren().add(vBox);
     }
 
-    private void setHandlers(){
+    /*private void setHandlers(){
 
         loginButton.setOnAction( actionEvent -> {
             // Call loginLogic.SetUser( String username, String pass );
@@ -78,5 +81,21 @@ public class LoginView extends ViewClass{
         createUserButton.setOnAction( actionEvent -> {
             new ViewController( new CreateUserView() ).showView();
         });
+    }*/
+
+    public TextField getUsernameField() {
+        return usernameField;
+    }
+
+    public TextField getPasswordField() {
+        return passwordField;
+    }
+
+    public Button getLoginButton() {
+        return loginButton;
+    }
+
+    public Button getCreateUserButton() {
+        return createUserButton;
     }
 }

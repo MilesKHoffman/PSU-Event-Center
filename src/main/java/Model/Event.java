@@ -5,8 +5,10 @@ import java.time.LocalDateTime;
 public class Event extends Activity {
 
     private double latitude, longitude;
-    public Event(String name, String desc, LocalDateTime dateTime) {
-        super(name, desc, dateTime);
+    public Event(int id, String name, String desc, LocalDateTime dateTime, double latitude, double longitude) {
+        super(id, name, desc, dateTime);
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public void setLatitude(double latitude) {

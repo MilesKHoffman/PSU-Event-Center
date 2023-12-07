@@ -1,17 +1,40 @@
 package Controller;
 
 
+import View.CreateUserView;
 import View.LoginView;
+import View.HomescreenView;
+
+import Repository.DatabaseHandler;
 
 public class LoginLogic extends LogicInter{
 
-    LoginView view;
+    private LoginView view;
 
     public LoginLogic(LoginView view ){
         this.view = view;
     }
 
+    //login button
+    public void setLoginHandler() {
+        view.getLoginButton().setOnAction( actionEvent -> {
+            String username = view.getUsernameField().getText();
+            String password = view.getPasswordField().getText();
 
-    // setUsere( ... ){ MongoLogic.verifyLogin( ... );
-    // Create User.getUser().setMyEvents( MongoLogic.GetUserEvents() );
+            //check database for login info
+            if (DatabaseHandler.login(username, password) == null) {
+                System.out.println("Login Failed");
+            }
+            else {
+                new ViewController( new HomescreenView("allEvents") ).showView();
+            }
+        });
+    }
+
+    //create user button
+    public void setCreateUserHandler() {
+        view.getCreateUserButton().setOnAction( actionEvent -> {
+            new ViewController( new CreateUserView() ).showView();
+        });
+    }
 }

@@ -32,7 +32,10 @@ public class CreateUserView extends ViewClass{
 
         removeHeader();
         setVars();
-        setHandlers();
+
+        logic.setCreateHandler();
+        logic.setReturnHandler();
+        //setHandlers();
         setScene("LoginStyle.css");
     }
 
@@ -66,7 +69,7 @@ public class CreateUserView extends ViewClass{
         root.getChildren().add(vBox);
     }
 
-    private void setHandlers(){
+    /*private void setHandlers(){
 
         createButton.setOnAction( actionEvent -> {
             new ViewController( new LoginView() ).showView();
@@ -75,5 +78,21 @@ public class CreateUserView extends ViewClass{
         returnButton.setOnAction( actionEvent -> {
             new ViewController( new LoginView() ).showView();
         });
+    }*/
+
+    public TextField getUsernameField() {
+        return usernameField;
+    }
+
+    public TextField getPasswordField() {
+        return passwordField;
+    }
+
+    public Button getCreateButton() {
+        return createButton;
+    }
+
+    public Button getReturnButton() {
+        return returnButton;
     }
 }

@@ -3,6 +3,7 @@ package View;
 import Controller.Functions;
 import Controller.LogicInter;
 import Controller.ViewController;
+import Model.User;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -64,19 +65,32 @@ public class ViewClass {
         Button searchEventButton = new Button("SEARCH EVENTS");
         Button homeButton = new Button("ALL EVENTS");
         Button mapButton = new Button("EVENT MAP");
+        Button createEventButton = new Button("CREATE EVENT");
 
+        //----------------------------------------------------------------------------
         myEventButton.setOnAction( actionEvent -> {
             new ViewController( new HomescreenView("myEvents") ).showView();
         });
-
+        searchEventButton.setOnAction( actionEvent -> {
+            //test case for now
+            System.out.println("Search button clicked");
+        });
         homeButton.setOnAction( actionEvent -> {
             new ViewController( new HomescreenView("allEvents") ).showView();
         });
         mapButton.setOnAction( actionEvent -> {
             new ViewController( new MapView() ).showView();
         });
+        createEventButton.setOnAction( actionEvent -> {
+            new ViewController( new CreateEventView() ).showView();
+        });
+        //---------------------------------------------------------------------------
 
         HBox hbox = new HBox(homeButton, myEventButton, searchEventButton, mapButton);
+        //add create event to hbox only if the user is an admin
+        if (User.getInstance().isAdmin()) {
+            hbox.getChildren().add(createEventButton);
+        }
         hbox.setPrefWidth(sceneWidth);
         hbox.setPrefHeight(headerHeight);
         hbox.getStyleClass().add("headerBackground");

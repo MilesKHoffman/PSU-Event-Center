@@ -11,6 +11,19 @@
                 center: latlng,
             };
             document.map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+
+            // Listen for the setMapCenter event
+            document.addEventListener('setMapCenter', function (event) {
+                var detail = event.detail;
+                if (detail && detail.latitude && detail.longitude) {
+                    setMapCenter(detail.latitude, detail.longitude);
+                }
+            });
+        }
+
+        function setMapCenter(latitude, longitude) {
+            var newCenter = new google.maps.LatLng(latitude, longitude);
+            document.map.setCenter(newCenter);
         }
     </script>
 </head>
