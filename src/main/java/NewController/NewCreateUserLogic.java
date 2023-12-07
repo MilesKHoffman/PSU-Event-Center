@@ -1,6 +1,7 @@
 package NewController;
 
 import NewView.NewCreateUserView;
+import NewView.NewLoginView;
 import Repository.DatabaseHandler;
 import View.CreateUserView;
 import View.LoginView;
@@ -29,14 +30,14 @@ public class NewCreateUserLogic {
                 }
             }
 
-            new NewViewController( new LoginView() ).showView();
+            new NewViewController( new NewLoginView() ).showView();
         });
     }
 
     //return button
     public void setReturnHandler() {
         view.getReturnButton().setOnAction( actionEvent -> {
-            new NewViewController( new LoginView() ).showView();
+            new NewViewController( new NewLoginView() ).showView();
         });
     }
 }

@@ -7,7 +7,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
-public class NewEventCreatorView extends ViewClass {
+public class NewEventCreatorView extends NewViewClass {
 
     NewEventEditorLogic logic = new NewEventEditorLogic( this );
 

@@ -12,7 +12,7 @@ import javafx.scene.layout.*;
 
 import java.util.ArrayList;
 
-public class NewEventView extends ViewClass {
+public class NewEventView extends NewViewClass {
 
     private Button eventClick;
     private NewEventLogic logic = new NewEventLogic( this ); // Connects to the logic -MH

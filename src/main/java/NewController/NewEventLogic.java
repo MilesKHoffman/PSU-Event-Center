@@ -28,8 +28,8 @@ public class NewEventLogic {
     }
 
     public void setEventClickHandler(Event e) {
-        homeView.getEventClick().setOnAction( actionEvent -> {
-            new NewViewController( new EventView(e) ).showView();
-        });
+        /*
+        bring up the event's larger display on the same screen.
+         */
     }
 }

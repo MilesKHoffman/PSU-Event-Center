@@ -21,7 +21,7 @@ import javafx.scene.layout.VBox;
 
      */
 
-public class NewCreateUserView extends ViewClass {
+public class NewCreateUserView extends NewViewClass {
 
     private TextField usernameField, passwordField;
     private Button createButton, returnButton;

@@ -5,46 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="reworking ui">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EventEditorLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewCreateEventLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewCreateUserLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventEditorLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventViewLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewHeaderNewLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewHomescreenLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewLogicInter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewLoginLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewMapLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewController/NewViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewBaseView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateUserView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewEventEditorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewEventView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewHomescreenView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewLoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewMapView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewUI_Testing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/NewViewClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/EventEditorStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EventEditorView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MongoLogic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateUserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventEditorView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MapView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewCreateUserLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewController/NewCreateUserLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewHomescreenLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewController/NewHomescreenLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewController/NewViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewBaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewBaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewCreateUserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateUserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewEventCreatorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewEventCreatorView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewEventView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewHomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewHomescreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewLoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewLoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewMapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewMapView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dac43698ac5515e1668cebf761177f4ad363f10b" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,35 +59,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "WorkBranch2",
-    "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/NewController",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.46091953",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;WorkBranch2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/java/NewController&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.46091953&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\NewController" />
@@ -125,7 +101,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewUI_Test">
+  <component name="RunManager" selected="Application.NewViews">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />

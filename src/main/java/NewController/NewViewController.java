@@ -1,6 +1,7 @@
 package NewController;
 
 import NewView.NewBaseView;
+import NewView.NewViewClass;
 import View.BaseView;
 import View.ViewClass;
 
@@ -8,13 +9,13 @@ public class NewViewController {
 
     private static NewBaseView newBaseView;
 
-    private ViewClass view;
+    private NewViewClass view;
 
-    public NewViewController(ViewClass view ){
+    public NewViewController( NewViewClass view ){
         setView(view);
     }
 
-    public void setView( ViewClass view ){
+    public void setView( NewViewClass view ){
         this.view = view;
     }
 

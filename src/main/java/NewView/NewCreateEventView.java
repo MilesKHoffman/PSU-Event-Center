@@ -8,7 +8,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
-public class NewCreateEventView extends ViewClass {
+public class NewCreateEventView extends NewViewClass {
 
     private NewCreateEventLogic logic = new NewCreateEventLogic(this);
 

@@ -1,6 +1,8 @@
 package NewController;
 
 
+import NewView.NewCreateUserView;
+import NewView.NewHomescreenView;
 import NewView.NewLoginView;
 import Repository.DatabaseHandler;
 import View.CreateUserView;
@@ -26,7 +28,7 @@ public class NewLoginLogic extends NewLogicInter {
                 System.out.println("Login Failed");
             }
             else {
-                new NewViewController( new HomescreenView("allEvents") ).showView();
+                new NewViewController( new NewHomescreenView() ).showView();
             }
         });
     }
@@ -34,7 +36,7 @@ public class NewLoginLogic extends NewLogicInter {
     //create user button
     public void setCreateUserHandler() {
         view.getCreateUserButton().setOnAction( actionEvent -> {
-            new NewViewController( new CreateUserView() ).showView();
+            new NewViewController( new NewCreateUserView() ).showView();
         });
     }
 }

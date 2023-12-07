@@ -6,7 +6,7 @@ import NewController.NewMapLogic;
 import View.ViewClass;
 import javafx.scene.layout.VBox;
 
-public class NewMapView extends ViewClass {
+public class NewMapView extends NewViewClass {
 
     private NewMapLogic logic = new NewMapLogic(this);
     public NewMapView() {

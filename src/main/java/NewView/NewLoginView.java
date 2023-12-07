@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class NewLoginView extends ViewClass {
+public class NewLoginView extends NewViewClass {
 
     /* Here are the parent variables/methods:
 

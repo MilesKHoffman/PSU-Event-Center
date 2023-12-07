@@ -15,7 +15,7 @@ public class NewBaseView extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        viewC = new NewViewController( new LoginView() );
+        viewC = new NewViewController( new NewLoginView() );
         viewC.setBaseView( this );
 
         stage = new Stage();
