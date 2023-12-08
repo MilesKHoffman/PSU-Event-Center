@@ -88,7 +88,9 @@ public class MilesMap {
                             });
 
                         } else if (satellite.isSelected()) {
-
+                            Platform.runLater( () -> {
+                                webEngine.executeScript("document.setMapTypeSatellite()");
+                            });
                         } else if (hybrid.isSelected()) {
                             Platform.runLater( () -> {
                                 webEngine.executeScript("document.setMapTypeHybrid()");

@@ -1,10 +1,11 @@
-<html>
 
+<!DOCTYPE html>
+<html lang="en">
    <!-- AIzaSyDSbT8vUpXDQ1nsRZQ4wzvIo_plGWJBN1s -->
-
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-
+  <title>GoogleMap API</title>
   <style type="text/css">
     html {
       height: 100%
@@ -35,10 +36,6 @@
     }
   </style>
 
-
-  <script type="text/javascript"
-          src="https://maps.google.com/maps/api/js?key=AIzaSyDSbT8vUpXDQ1nsRZQ4wzvIo_plGWJBN1s&sensor=false&callback=Function.prototype">
-  </script>
 
   <script type="text/javascript">
     function initialize() {
@@ -116,8 +113,12 @@
       });
     }
   </script>
+
+  <script type="text/javascript"
+          src="https://maps.google.com/maps/api/js?key=AIzaSyDSbT8vUpXDQ1nsRZQ4wzvIo_plGWJBN1s&sensor=false&callback=Function.prototype">
+  </script>
 </head>
-  <body onLoad="initialize()">
+  <body onload="initialize()">
     <div id="loading-overlay">Loading...</div>
     <div id="map_canvas" style="width:100%; height:100%"></div>
   </body>

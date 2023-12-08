@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="work on map">
-      <change afterPath="$PROJECT_DIR$/hs_err_pid26152.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HEREMap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LeafMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeafMap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GoogleMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GoogleMap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OpenLayer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LeafMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LeafMap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +171,7 @@
       <workItem from="1701886655807" duration="28589000" />
       <workItem from="1701954864692" duration="247000" />
       <workItem from="1702010258095" duration="12103000" />
-      <workItem from="1702053015097" duration="4476000" />
+      <workItem from="1702053015097" duration="6316000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -303,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702053616533</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="work on map">
+      <created>1702057593586</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702057593586</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,17 +332,5 @@
     <MESSAGE value="work" />
     <MESSAGE value="work on map" />
     <option name="LAST_COMMIT_MESSAGE" value="work on map" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/NewView/NewUI_Testing.java</url>
-          <line>10</line>
-          <properties field="stage" class="NewView.NewUI_Testing" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
