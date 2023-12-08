@@ -6,6 +6,7 @@ module com.example.sweng411projjavafx {
     requires sqlite.jdbc;
     requires com.google.gson;
     requires jdk.jsobject;
+    requires jdk.httpserver;
 
     exports zTesting;
     exports Controller;

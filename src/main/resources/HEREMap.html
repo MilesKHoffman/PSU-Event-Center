@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+</head>
+<body>
+<div id="map" style="width: 100%; height: 100vh;"></div>
+
+<script>
+    // Add your HERE Maps API key here
+    const apiKey = 'D4hlwmsp11eFcyLbdREKIxGq7Qqp-W1CeiMZy8mtm-8';
+
+    // Initialize the platform
+    const platform = new H.service.Platform({ apikey: apiKey });
+
+    // Obtain the default map types from the platform object:
+    const defaultLayers = platform.createDefaultLayers();
+
+    // Instantiate (and display) a map object:
+    const map = new H.Map(document.getElementById('map'), defaultLayers.vector.normal.map, {
+        center: { lat: 0, lng: 0 },
+        zoom: 2,
+    });
+
+    // Add behavior to the map
+    const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+    // Create the default UI components
+    const ui = H.ui.UI.createDefault(map, defaultLayers);
+</script>
+</body>
+</html>

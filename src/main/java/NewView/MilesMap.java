@@ -3,7 +3,6 @@ package NewView;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.concurrent.Task;
 import javafx.concurrent.Worker;
 import javafx.scene.Node;
 import javafx.scene.control.*;
@@ -15,7 +14,6 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 import java.io.File;
-import java.util.concurrent.atomic.AtomicLong;
 
 public class MilesMap {
 
@@ -41,6 +39,16 @@ public class MilesMap {
 
         Platform.runLater(()  -> {
             webEngine.load( url.toURI().toString() );
+
+            //String mapURL = getClass().getResource("/GoogleMap.html").toExternalForm();
+            //webEngine.load(mapURL);
+        });
+
+
+        webEngine.getLoadWorker().stateProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue == Worker.State.FAILED) {
+                System.err.println("failed to load: " + webEngine.getLoadWorker().getMessage());
+            }
         });
 
         createToolbar();
@@ -112,7 +120,5 @@ public class MilesMap {
     public BorderPane getRoot() {
         return root;
     }
-
-
 }
 
