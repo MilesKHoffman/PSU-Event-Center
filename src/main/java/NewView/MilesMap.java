@@ -1,11 +1,10 @@
 package NewView;
 
-import View.ViewClass;
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.concurrent.Task;
 import javafx.concurrent.Worker;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
@@ -16,6 +15,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 import java.io.File;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class MilesMap {
 
@@ -31,23 +31,19 @@ public class MilesMap {
 
     public void initializeMap(){
         String dir = System.getProperty("user.dir");
-        File url = new File( dir + "/src/main/java/GoogleMap.html" );
+        String path = dir + "/src/main/java/GoogleMap.html";
+        File url = new File( path );
 
         // Create a WebView
         webView = new WebView();
         webEngine = webView.getEngine();
         webEngine.setJavaScriptEnabled(true);
 
-        webEngine.load( url.toURI().toString() );
+        Platform.runLater(()  -> {
+            webEngine.load( url.toURI().toString() );
+        });
 
         createToolbar();
-
-        webEngine.getLoadWorker().stateProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue == Worker.State.SUCCEEDED) {
-                // Now you can interact with the map
-                webEngine.executeScript("console.debug('Map loaded');");
-            }
-        });
 
         // set root
         root.getStyleClass().add("GoogleMap");
@@ -79,13 +75,20 @@ public class MilesMap {
                             ObservableValue<? extends Toggle> observableValue,
                             Toggle toggle, Toggle toggle1) {
                         if (road.isSelected()) {
-                            webEngine.executeScript("document.setMapTypeRoad()");
+                            Platform.runLater( () -> {
+                                webEngine.executeScript("document.setMapTypeRoad()");
+                            });
+
                         } else if (satellite.isSelected()) {
-                            webEngine.executeScript("document.setMapTypeSatellite()");
+
                         } else if (hybrid.isSelected()) {
-                            webEngine.executeScript("document.setMapTypeHybrid()");
+                            Platform.runLater( () -> {
+                                webEngine.executeScript("document.setMapTypeHybrid()");
+                            });
                         } else if (terrain.isSelected()) {
-                            webEngine.executeScript("document.setMapTypeTerrain()");
+                            Platform.runLater( () -> {
+                                webEngine.executeScript("document.setMapTypeTerrain()");
+                            });
                         }
                     }
                 });
@@ -106,5 +109,10 @@ public class MilesMap {
         root.setTop(toolBar);
     }
 
-    public BorderPane getRoot() { return root; }
+    public BorderPane getRoot() {
+        return root;
+    }
+
+
 }
+

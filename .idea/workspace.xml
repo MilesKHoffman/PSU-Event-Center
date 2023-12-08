@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="work">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GoogleMap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zTesting/exampleMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="work on map">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeafMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/images/layers-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/images/layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/images/marker-icon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/images/marker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/images/marker-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet-src.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet-src.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet-src.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leaflet.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewController/NewEventLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewCreateEventView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewMapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewMapView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GoogleMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GoogleMap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewUI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewUI_Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zTesting/MapFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zTesting/MapFunctionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,41 +60,44 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2YbV7eKgknRdgbWaZZAvbT8JoAT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;WorkBranch2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/resources/StyleSheets&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.46091953&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "WorkBranch2",
+    "last_opened_file_path": "C:/1. School/SWENG  411/SWENG-411-Proj-JavaFX/src/main/resources/StyleSheets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.46091953",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
@@ -94,11 +107,14 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java" />
+      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\java\NewView" />
+      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\leaflet" />
+      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\leaflet\images" />
       <recent name="C:\Users\chase\IdeaProjects\SWENG 411 ASSIGNMENTS\SWENG-411-Proj-JavaFX\src\main\java\Repository" />
-      <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewViews">
+  <component name="RunManager" selected="Application.NewUI_Test">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
@@ -170,6 +186,8 @@
       <workItem from="1701669832016" duration="2263000" />
       <workItem from="1701720737921" duration="993000" />
       <workItem from="1701886655807" duration="28589000" />
+      <workItem from="1701954864692" duration="247000" />
+      <workItem from="1702010258095" duration="12103000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -273,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701928495202</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="work on map">
+      <created>1701955100022</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701955100022</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +316,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Blank" />
     <MESSAGE value="Updates to loginview." />
     <MESSAGE value="Updates to loginview, css, Functions, and Homescreen" />
@@ -299,6 +325,19 @@
     <MESSAGE value="reworking ui" />
     <MESSAGE value="&#10;reworking ui" />
     <MESSAGE value="work" />
-    <option name="LAST_COMMIT_MESSAGE" value="work" />
+    <MESSAGE value="work on map" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on map" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/NewView/NewUI_Testing.java</url>
+          <line>10</line>
+          <properties field="stage" class="NewView.NewUI_Testing" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

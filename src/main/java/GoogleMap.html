@@ -88,12 +88,31 @@
         document.map.setcenter = latlng;
       }
 
+      document.clickLatLong = function clickLatLong() {
+        google.maps.event.addListener(document.map, 'click', function(event) {
+          // Get the clicked latitude and longitude coordinates
+          var lat = event.latLng.lat();
+          var lng = event.latLng.lng();
+
+          // You can now use these coordinates for various purposes, like:
+          // - Displaying them on the screen
+          alert("Latitude: " + lat + ", Longitude: " + lng);
+          // - Sending them to a server
+          console.log("Latitude:", lat, "Longitude:", lng);
+          // - Placing a marker on the map
+          return new google.maps.Marker({
+            position: event.latLng,
+            map: document.map
+          });
+        });
+      };
+
       // Enable dragging and hide loading overlay when the map has finished loading
       google.maps.event.addListenerOnce(document.map, 'idle', function () {
         setTimeout(function () {
           document.map.setOptions({ draggable: true });
           loadingOverlay.style.display = "none";
-        }, 1000);
+        }, 0);
       });
     }
   </script>
