@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="work on map">
+      <change afterPath="$PROJECT_DIR$/src/main/java/NewView/EventCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GoogleMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GoogleMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/MilesMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/LeafMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LeafMap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewView/NewHomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewView/NewHomescreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/HomeStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,7 +97,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\leaflet\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewUI_Test">
+  <component name="RunManager" selected="Application.NewViews">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
@@ -171,7 +171,10 @@
       <workItem from="1701886655807" duration="28589000" />
       <workItem from="1701954864692" duration="247000" />
       <workItem from="1702010258095" duration="12103000" />
-      <workItem from="1702053015097" duration="6316000" />
+      <workItem from="1702053015097" duration="6375000" />
+      <workItem from="1702351987506" duration="3306000" />
+      <workItem from="1702411974609" duration="3690000" />
+      <workItem from="1702421145954" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -303,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702057593586</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="work on map">
+      <created>1702059426858</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702059426858</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

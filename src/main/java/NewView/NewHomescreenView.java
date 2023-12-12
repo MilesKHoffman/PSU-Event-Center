@@ -54,7 +54,7 @@ public class NewHomescreenView extends NewViewClass{
         Label myEventsLabel = new Label("MY EVENTS");
         TilePane myEventsTileP = new TilePane();
         for( int i : new int[50]){
-            myEventsTileP.getChildren().add( new Button("TESTING"));
+            myEventsTileP.getChildren().add( new EventCard("TestName", "This is a description", "Erie"));
         }
         ScrollPane myEventScroll = new ScrollPane( myEventsTileP );
 

@@ -8,6 +8,7 @@ VBox {
 TilePane {
     -fx-border-color: black;
     -fx-pref-columns: 1;
+    -fx-hgap: 10;
     -fx-vgap: 10;
 }
 
