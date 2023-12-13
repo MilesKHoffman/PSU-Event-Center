@@ -1,6 +1,6 @@
 package View;
 
-import Controller.*;
+import Controller.ViewController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

@@ -2,12 +2,11 @@ package Controller;
 
 
 import View.CreateUserView;
-import View.LoginView;
 import View.HomescreenView;
-
+import View.LoginView;
 import Repository.DatabaseHandler;
 
-public class LoginLogic extends LogicInter{
+public class LoginLogic extends LogicInter {
 
     private LoginView view;
 
@@ -26,7 +25,7 @@ public class LoginLogic extends LogicInter{
                 System.out.println("Login Failed");
             }
             else {
-                new ViewController( new HomescreenView("allEvents") ).showView();
+                new ViewController( new HomescreenView() ).showView();
             }
         });
     }

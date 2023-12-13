@@ -1,20 +1,18 @@
-package NewController;
+package Controller;
 
 import Model.Event;
 import Model.Map;
-import NewView.NewEventView;
-import NewView.NewHomescreenView;
-import Repository.DatabaseHandler;
 import View.EventView;
+import Repository.DatabaseHandler;
 import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
 
-public class NewEventLogic {
+public class EventLogic {
 
-    private NewEventView view;
+    private EventView view;
 
-    public NewEventLogic(NewEventView view ){ this.view = view; }
+    public EventLogic(EventView view ){ this.view = view; }
 
 
     public ArrayList<Event> getAllEvents(){

@@ -1,8 +1,8 @@
 package View;
 
 import Controller.MapLogic;
-import Model.Map;
-import javafx.scene.layout.VBox;
+import View.Components.MapComponent;
+import javafx.scene.layout.BorderPane;
 
 public class MapView extends ViewClass {
 
@@ -15,6 +15,8 @@ public class MapView extends ViewClass {
         setScene("MapStyle.css");
 
     }
+
+    /*
     public void drawMap() {
 
         VBox mapVBox = logic.getMapVBox();
@@ -25,5 +27,18 @@ public class MapView extends ViewClass {
         mapVBox.setLayoutY(headerHeight);
 
         root.getChildren().add(mapVBox);
+    }
+
+     */
+
+    private void drawMap(){
+        MapComponent map = new MapComponent();
+
+        BorderPane mapPane = map.getRoot();
+
+        mapPane.setPrefHeight( sceneHeight - headerHeight);
+        mapPane.setLayoutY(headerHeight);
+
+        root.getChildren().add(mapPane);
     }
 }

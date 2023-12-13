@@ -2,14 +2,13 @@ package Controller;
 
 import View.CreateUserView;
 import View.LoginView;
-
 import Repository.DatabaseHandler;
 
 public class CreateUserLogic {
 
     private CreateUserView view;
 
-    public CreateUserLogic( CreateUserView view ){
+    public CreateUserLogic(CreateUserView view ){
         this.view = view;
     }
 

@@ -1,7 +1,7 @@
 package View;
 
-import Controller.CreateEventLogic;
 import Model.Map;
+import Controller.CreateEventLogic;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;

@@ -2,54 +2,41 @@ package View;
 
 import Controller.Functions;
 import Controller.HomescreenLogic;
-import Model.Event;
-import Model.Map;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
 
-import java.util.ArrayList;
-
 public class HomescreenView extends ViewClass {
 
-    private Button eventClick;
+     /* Here are the parent variables/methods:
+
+    protected Scene scene;
+    protected Group root;
+
+    public Scene getScene();
+    public Group getRoot();
+    protected setScene( String );
+
+     */
+
     private HomescreenLogic logic = new HomescreenLogic( this ); // Connects to the logic -MH
-    public HomescreenView(String s) {
+    public HomescreenView() {
 
         super();
 
-        if (s.equals("allEvents")) {
-            drawAllEvents(logic.getAllEvents());
-        }
-        else if (s.equals("myEvents")) {
-            drawMyEvents(logic.getMyEvents());
-        }
-
-        drawSideMap();
+        setVars();
         setScene("HomeStyle.css");
     }
-    public void drawSideMap() {
-        VBox mapVBox = logic.getMapVBox();
-        Map.setMapCenter(42.119212, -79.982995);
 
-        // set map size and layout
-        mapVBox.setPrefSize(sceneMidWi,sceneHeight - headerHeight);
-        mapVBox.setLayoutX(sceneMidWi);
-        mapVBox.setLayoutY(headerHeight);
+    private void setVars(){
 
-        root.getChildren().add(mapVBox);
-    }
-    public void drawAllEvents(ArrayList<Event> events) {
         Functions function = new Functions();
 
-        //upcoming events
         Label upcomingLabel = new Label("UPCOMING EVENTS");
         TilePane upcomingTilesP = new TilePane();
-        for( Event e : events ){
-            eventClick = new Button(e.getName());
-            logic.setEventClickHandler(e);
-            upcomingTilesP.getChildren().add( eventClick );
+        for( int i : new int[50] ){
+            upcomingTilesP.getChildren().add( new Button("TESTING"));
         }
         function.setCollectionInputStyle(upcomingTilesP, new Button(), new String[]{"center"});
         ScrollPane upcomingScroll = new ScrollPane( upcomingTilesP );
@@ -58,37 +45,20 @@ public class HomescreenView extends ViewClass {
         upcomingVbox.setPrefWidth(sceneMidWi);
         upcomingVbox.getStyleClass().add("splitVBox");
 
-        //hbox for separating events
-        HBox split = new HBox(upcomingVbox);
-        split.getStyleClass().add("container");
-        split.setMaxWidth(sceneWidth);
-        split.setMaxHeight(sceneHeight - headerHeight);
-        split.setLayoutY(headerHeight);
-
-        function.setCollectionInputStyle(split, new Label(), new String[]{"fontHeader1"});
-
-        root.getChildren().add(split);
-    }
-    //cheese stinks
-    public void drawMyEvents(ArrayList<Event> events) {
-        Functions function = new Functions();
-
-        //my events
         Label myEventsLabel = new Label("MY EVENTS");
+
         TilePane myEventsTileP = new TilePane();
-        for( Event e : events){
-            eventClick = new Button(e.getName());
-            logic.setEventClickHandler(e);
-            myEventsTileP.getChildren().add( eventClick );
+        for( int i : new int[50]){
+            myEventsTileP.getChildren().add( new EventCard("TestName", "This is a description", "Erie"));
         }
         ScrollPane myEventScroll = new ScrollPane( myEventsTileP );
+
 
         VBox myEventsVbox = new VBox(myEventsLabel, myEventScroll);
         myEventsVbox.setPrefWidth(sceneMidWi);
         myEventsVbox.getStyleClass().add("splitVBox");
 
-        //hbox for separating events
-        HBox split = new HBox(myEventsVbox);
+        HBox split = new HBox(upcomingVbox, myEventsVbox);
         split.getStyleClass().add("container");
         split.setMaxWidth(sceneWidth);
         split.setMaxHeight(sceneHeight - headerHeight);
@@ -97,9 +67,5 @@ public class HomescreenView extends ViewClass {
         function.setCollectionInputStyle(split, new Label(), new String[]{"fontHeader1"});
 
         root.getChildren().add(split);
-    }
-
-    public Button getEventClick() {
-        return eventClick;
     }
 }

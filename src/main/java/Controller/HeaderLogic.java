@@ -1,6 +1,6 @@
 package Controller;
 
-public class HeaderLogic extends LogicInter{
+public class HeaderLogic extends LogicInter {
 
 
 }

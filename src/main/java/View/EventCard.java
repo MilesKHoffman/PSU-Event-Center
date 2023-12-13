@@ -1,12 +1,7 @@
-package NewView;
+package View;
 
-import Model.Activity;
 import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
-
-import java.time.LocalDateTime;
 
 public class EventCard extends Pane {
 

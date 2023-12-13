@@ -1,10 +1,11 @@
 package Controller;
 
-import View.*;
+import View.BaseView;
+import View.ViewClass;
 
 public class ViewController {
 
-    private static BaseView newBaseView;
+    private static BaseView baseView;
 
     private ViewClass view;
 
@@ -17,11 +18,11 @@ public class ViewController {
     }
 
     public void setBaseView( BaseView bView ){
-        newBaseView = bView;
+        baseView = bView;
     }
 
     public void showView(){
 
-        newBaseView.setStageScene( view.getScene() );
+        baseView.setStageScene( view.getScene() );
     }
 }

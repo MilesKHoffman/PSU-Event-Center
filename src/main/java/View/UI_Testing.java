@@ -1,7 +1,7 @@
 package View;
 
-import NewView.NewHomescreenView;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -12,12 +12,17 @@ public class UI_Testing extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        NewHomescreenView view = new NewHomescreenView();
+        MapView view = new MapView();
 
         stage = new Stage();
         setStageScene( view.getScene() );
         stage.setTitle("SWENG 411 Proj");
         stage.show();
+
+        stage.setOnCloseRequest( event -> {
+            Platform.exit();
+            System.out.println("Platform exit");
+        });
     }
 
     public void setStageScene( Scene scene ){

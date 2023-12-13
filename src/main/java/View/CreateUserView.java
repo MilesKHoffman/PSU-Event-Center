@@ -1,7 +1,7 @@
 package View;
 
-import Controller.CreateUserLogic;
 import Controller.Functions;
+import Controller.CreateUserLogic;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;

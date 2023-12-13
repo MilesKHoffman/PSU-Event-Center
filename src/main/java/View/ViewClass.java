@@ -1,8 +1,8 @@
 package View;
 
 import Controller.Functions;
-import Controller.ViewController;
 import Model.User;
+import Controller.ViewController;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -53,21 +53,25 @@ public class ViewClass {
          */
 
         Button myEventButton = new Button("MY EVENTS");
+        Button allEventButton = new Button("ALL EVENTS");
         Button searchEventButton = new Button("SEARCH EVENTS");
-        Button homeButton = new Button("ALL EVENTS");
+        Button homeButton = new Button("HOME");
         Button mapButton = new Button("EVENT MAP");
         Button createEventButton = new Button("CREATE EVENT");
 
         //----------------------------------------------------------------------------
         myEventButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView("myEvents") ).showView();
+            new ViewController( new EventView( false )).showView();
+        });
+        allEventButton.setOnAction( actionEvent -> {
+            new ViewController( new EventView( true )).showView();
         });
         searchEventButton.setOnAction( actionEvent -> {
             //test case for now
             System.out.println("Search button clicked");
         });
         homeButton.setOnAction( actionEvent -> {
-            new ViewController( new HomescreenView("allEvents") ).showView();
+            new ViewController( new HomescreenView() ).showView();
         });
         mapButton.setOnAction( actionEvent -> {
             new ViewController( new MapView() ).showView();
@@ -77,7 +81,7 @@ public class ViewClass {
         });
         //---------------------------------------------------------------------------
 
-        HBox hbox = new HBox(homeButton, myEventButton, searchEventButton, mapButton);
+        HBox hbox = new HBox(homeButton, myEventButton, allEventButton, searchEventButton, mapButton);
         //add create event to hbox only if the user is an admin
         if (User.getInstance().isAdmin()) {
             hbox.getChildren().add(createEventButton);

@@ -1,4 +1,4 @@
-package NewView;
+package View.Components;
 
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -15,14 +15,14 @@ import javafx.scene.web.WebView;
 
 import java.io.File;
 
-public class MilesMap {
+public class MapComponent {
 
     private WebView webView;
     private WebEngine webEngine;
 
     private BorderPane root = new BorderPane();
 
-    public MilesMap() {
+    public MapComponent() {
 
         initializeMap();
     }

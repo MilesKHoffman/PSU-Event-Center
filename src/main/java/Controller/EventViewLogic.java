@@ -1,9 +1,8 @@
 package Controller;
 
-import View.EventView;
-
 import Model.User;
 import Repository.DatabaseHandler;
+import View.EventView;
 
 public class EventViewLogic {
 
@@ -13,9 +12,12 @@ public class EventViewLogic {
         this.view = view;
     }
 
+    /*
     public void setFollowEventHandler() {
         view.getFollowEvent().setOnAction( actionEvent -> {
             DatabaseHandler.saveEvent(User.getInstance().getUserID(), view.getEvent().getId());
         });
     }
+
+     */
 }
