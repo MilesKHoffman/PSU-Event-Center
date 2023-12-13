@@ -52,6 +52,7 @@ public class NewHomescreenView extends NewViewClass{
         upcomingVbox.getStyleClass().add("splitVBox");
 
         Label myEventsLabel = new Label("MY EVENTS");
+
         TilePane myEventsTileP = new TilePane();
         for( int i : new int[50]){
             myEventsTileP.getChildren().add( new EventCard("TestName", "This is a description", "Erie"));

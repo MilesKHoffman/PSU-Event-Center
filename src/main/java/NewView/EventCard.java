@@ -14,7 +14,7 @@ public class EventCard extends Pane {
     private String description;
     private String location;
 
-    private int width = 1000;
+    private int width = 10;
     private int height = 150;
 
     public EventCard(String name, String description, String location) {

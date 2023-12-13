@@ -10,6 +10,7 @@ TilePane {
     -fx-pref-columns: 1;
     -fx-hgap: 10;
     -fx-vgap: 10;
+    -fx-pref-tile-width: 350;
 }
 
 .splitVBox {
