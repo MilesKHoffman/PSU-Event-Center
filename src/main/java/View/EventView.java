@@ -4,6 +4,7 @@ import Controller.Functions;
 import Model.Event;
 import Model.Map;
 import Controller.EventLogic;
+import View.Components.MapComponent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -29,6 +30,8 @@ public class EventView extends ViewClass {
         drawSideMap();
         setScene("NewEventStyle.css");
     }
+
+    /*
     public void drawSideMap() {
         VBox mapVBox = logic.getMapVBox();
         Map.setMapCenter(42.119212, -79.982995);
@@ -40,6 +43,22 @@ public class EventView extends ViewClass {
 
         root.getChildren().add(mapVBox);
     }
+
+     */
+
+    private void drawSideMap(){
+        MapComponent map = new MapComponent();
+
+        BorderPane mapPane = map.getRoot();
+
+        mapPane.setPrefHeight( sceneHeight - headerHeight);
+        mapPane.setPrefWidth(sceneMidWi);
+        mapPane.setLayoutY(headerHeight);
+        mapPane.setLayoutX(sceneMidWi);
+
+        root.getChildren().add(mapPane);
+    }
+
     public void drawEvents(ArrayList<Event> events, String label) {
         Functions function = new Functions();
 

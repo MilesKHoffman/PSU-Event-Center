@@ -88,6 +88,23 @@ Button {
         -fx-text-fill: fifthColor;
     }
 
+.buttonClearStandard {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: fifthColor;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-family: "Source Code Pro";
+}
+    .buttonClearStandard:hover {
+        -fx-background-color: thirdColor;
+    }
+
+    .buttonClearStandard:pressed{
+        -fx-background-color: fifthColor;
+        -fx-text-fill: primaryColor;
+    }
+
 
 /* Font Styles */
 
@@ -108,4 +125,49 @@ Button {
     -fx-border-color: sixthColor;
     -fx-border-width: 2;
     -fx-effect: dropshadow(three-pass-box, white, 50, 0, 0, 0);
+}
+
+/* Event Card CSS */
+
+TilePane {
+    -fx-pref-columns: 1;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-pref-tile-width: 350;
+    -fx-pref-tile-height: 110;
+}
+
+.eventCard {
+    -fx-background-color: secondColor;
+    -fx-cursor: hand;
+}
+
+.eventCard Label {
+    -fx-translate-x: 10;
+}
+
+.nameText {
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-translate-y: 10;
+}
+
+.timeText {
+    -fx-translate-y: 50;
+    -fx-font-size: 13;
+}
+
+.locationText {
+    -fx-translate-y: 70;
+    -fx-font-size: 13;
+}
+
+.clubText {
+    -fx-translate-y: 90;
+    -fx-text-fill: gray;
+}
+
+.followButton {
+    -fx-translate-x: 260;
+    -fx-pref-width: 90;
 }

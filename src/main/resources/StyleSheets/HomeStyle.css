@@ -5,14 +5,6 @@ VBox {
     -fx-background-color: transparent;
 }
 
-TilePane {
-    -fx-border-color: black;
-    -fx-pref-columns: 1;
-    -fx-hgap: 10;
-    -fx-vgap: 10;
-    -fx-pref-tile-width: 350;
-}
-
 .splitVBox {
     -fx-border-color: null;
     -fx-border-width: 2;
