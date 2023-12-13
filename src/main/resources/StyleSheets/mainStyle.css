@@ -9,7 +9,7 @@
     backColor: #91bcf8;
 
 
-    sceneWidth: 800;
+    sceneWidth: 1000;
     sceneHeight: 600;
     headerHeight: 50;
 }
@@ -142,32 +142,39 @@ TilePane {
     -fx-cursor: hand;
 }
 
-.eventCard Label {
-    -fx-translate-x: 10;
-}
-
 .nameText {
     -fx-font-weight: bold;
     -fx-font-size: 16;
     -fx-translate-y: 10;
+    -fx-translate-x: 10;
 }
 
 .timeText {
     -fx-translate-y: 50;
+    -fx-translate-x: 10;
     -fx-font-size: 13;
 }
 
 .locationText {
-    -fx-translate-y: 70;
+    -fx-translate-y: 68;
+    -fx-translate-x: 10;
     -fx-font-size: 13;
 }
 
 .clubText {
-    -fx-translate-y: 90;
+    -fx-translate-y: 86;
+    -fx-font-size: 13;
     -fx-text-fill: gray;
+    -fx-translate-x: 10;
 }
 
 .followButton {
     -fx-translate-x: 260;
     -fx-pref-width: 90;
+}
+
+.deleteButton {
+    -fx-translate-x: 260;
+    -fx-pref-width: 90;
+    -fx-translate-y: 30;
 }

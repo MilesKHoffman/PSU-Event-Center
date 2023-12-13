@@ -16,8 +16,8 @@ public class ViewClass {
 
     protected Scene scene;
     protected Pane root;
-    protected final double sceneWidth = 800;
-    protected final double sceneHeight = 600;
+    protected final double sceneWidth = 1000;
+    protected final double sceneHeight = 650;
     protected final double sceneMidWi = sceneWidth / 2.0;
     protected final double sceneMidHi = sceneHeight / 2.0;
     protected final double headerHeight = 50.0;

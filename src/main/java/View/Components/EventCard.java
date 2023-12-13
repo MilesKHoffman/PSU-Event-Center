@@ -1,5 +1,6 @@
 package View.Components;
 
+import Controller.EventCardLogic;
 import Controller.ViewController;
 import View.EventView;
 import View.HomescreenView;
@@ -21,8 +22,9 @@ public class EventCard extends Pane {
     private String location;
     private String club;
     private boolean isFollowed;
-    private Button followButton;
+    private Button followButton, deleteButton;
     private LocalDateTime dateTime;
+    private EventCardLogic logic = new EventCardLogic(this);
 
     private int width = 350;
     private int height = 110;
@@ -65,19 +67,17 @@ public class EventCard extends Pane {
         followButton = new Button( isFollowed ? "UNFOLLOW" : "FOLLOW");
         followButton.getStyleClass().addAll("followButton", "buttonClearStandard");
 
-        // Add labels to the EventCard
-        getChildren().addAll(nameLabel, timeLabel, locationLabel, clubLabel, followButton);
+        if( logic.checkAdmin() ){
+            deleteButton = new Button("DELETE");
+            deleteButton.getStyleClass().addAll("deleteButton", "buttonClearStandard");
+            getChildren().addAll(nameLabel, timeLabel, locationLabel, clubLabel, followButton, deleteButton);
+        }
+        else {
+            getChildren().addAll(nameLabel, timeLabel, locationLabel, clubLabel, followButton);
+        }
     }
 
     private void setEvents(){
-
-        // Set up the click event
-        setOnMouseClicked(event -> {
-            // Handle the click event here, e.g., trigger some action
-            System.out.println("Event card clicked: " + name);
-
-            new ViewController( new EventView(!isFollowed) ).showView();
-        });
 
         followButton.setOnMouseClicked( mouseEvent -> {
             followClicked();
@@ -88,4 +88,7 @@ public class EventCard extends Pane {
         isFollowed = !isFollowed;
         followButton.setText(isFollowed ? "UNFOLLOW" : "FOLLOW");
     }
+
+    public boolean getIsFollowed(){ return isFollowed; }
+    public String getName(){ return name; }
 }

@@ -12,7 +12,7 @@ public class UI_Testing extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        MapView view = new MapView();
+        EventView view = new EventView(true);
 
         stage = new Stage();
         setStageScene( view.getScene() );

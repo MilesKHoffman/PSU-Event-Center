@@ -4,24 +4,36 @@ VBox {
     -fx-background-color: transparent;
 }
 
-TilePane {
-    -fx-border-color: black;
-    -fx-pref-columns: 1;
-    -fx-vgap: 10;
-}
-
 .eventVert {
     -fx-border-color: null;
     -fx-border-width: 2;
     -fx-alignment: TOP_CENTER;
     -fx-padding: 20;
+    -fx-translate-y: headerHeight;
 }
 
-.container {
+.namePop {
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-translate-y: 10;
+    -fx-translate-x: 10;
+}
+
+.descPop {
+    -fx-translate-y: 110;
+    -fx-translate-x: 30;
+    -fx-wrap-text: true;
+    -fx-max-width: 530;
+}
+
+.containerEvent {
+    -fx-pref-width: 590;
+    -fx-max-height: 600;
+    -fx-min-height: 300;
+    -fx-background-color: secondColor;
+}
+
+.popScroll {
+    -fx-border-color: backColor;
     -fx-padding: 0;
-    -fx-spacing:  0;
-}
-
-.center {
-
 }
