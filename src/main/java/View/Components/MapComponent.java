@@ -108,12 +108,17 @@ public class MapComponent {
             webEngine.reload();
         });
 
+        Button testButton = new Button("testButton");
+        testButton.setOnAction( actionEvent -> {
+            setLatLng(42.11889451425662, -79.98676190308014);
+        });
+
         // create toolbar
         ToolBar toolBar = new ToolBar();
         toolBar.getStyleClass().add("map-toolbar");
         toolBar.getItems().addAll(
                 road, satellite, hybrid, terrain,
-                createSpacer(), returnToBehrend
+                createSpacer(), testButton, returnToBehrend
         );
 
         root.setTop(toolBar);
@@ -121,6 +126,19 @@ public class MapComponent {
 
     public BorderPane getRoot() {
         return root;
+    }
+
+    // Sets and zooms into a point on the map.
+    public void setLatLng( double lat, double lng){
+
+        System.out.println("Button hit");
+
+        String latStr = String.valueOf(lat);
+        String lngStr = String.valueOf(lng);
+
+        Platform.runLater( () -> {
+            webEngine.executeScript("document.setLatLng(" + latStr + "," + lngStr + ")");
+        });
     }
 }
 
