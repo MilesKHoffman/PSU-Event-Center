@@ -1,6 +1,7 @@
 package Repository;
 
 import Model.Event;
+import Model.Location;
 import Model.User;
 
 import java.io.File;
@@ -171,6 +172,29 @@ public class DatabaseHandler {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public static ArrayList<Location> getLocations() {
+        ArrayList<Location> locations = new ArrayList<Location>();
+        try (Connection connection = getConnection()) {
+            String sql = "SELECT * FROM locations";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String name = resultSet.getString("location_name");
+                        double latitude = resultSet.getDouble("latitude");
+                        double longitude = resultSet.getDouble("longitude");
+
+                        Location loc = new Location(name, latitude, longitude);
+                        locations.add(loc);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return locations;
     }
 
 }
