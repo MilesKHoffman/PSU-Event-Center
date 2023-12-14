@@ -87,6 +87,31 @@ public class DatabaseHandler {
         return null;
     }
 
+    //create an event
+    public static boolean createEvent(String eventName, String eventDesc, String dateTime, String location, double lat, double longi, String club) {
+        try (Connection connection = getConnection()) {
+            String sql = "INSERT INTO events (event_name, event_description, event_datetime, event_location, latitude, longitude, event_club) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                statement.setString(1, eventName);
+                statement.setString(2, eventDesc);
+                statement.setString(3, dateTime);
+                statement.setString(4, location);
+                statement.setDouble(5, lat);
+                statement.setDouble(6, longi);
+                statement.setString(7, club);
+
+                statement.executeUpdate();
+
+                return true;
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
     //grabs all events from events table
     public static ArrayList<Event> getAllEvents() {
         ArrayList<Event> eventList = new ArrayList<>();

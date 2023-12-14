@@ -19,6 +19,7 @@ public class CreateEventView extends ViewClass {
     private TextArea eventDesc;
     private Button submitButton;
     private ComboBox<String> locationCombo;
+    private ComboBox<String> timeComboBox;
 
     public CreateEventView() {
         super();
@@ -59,7 +60,7 @@ public class CreateEventView extends ViewClass {
         eventDate = new DatePicker();
         eventDate.setPromptText("Event Date and Time");
         eventDate.getStyleClass().add("eventTime");
-        ComboBox<String> timeComboBox = createTimeComboBox();
+        timeComboBox = createTimeComboBox();
         timeComboBox.setPromptText("Select Time");
         timeComboBox.getStyleClass().add("eventTimeCombo");
         Label timeLabel = new Label("Event Date and Time:");
@@ -72,6 +73,7 @@ public class CreateEventView extends ViewClass {
 
         submitButton = new Button("Create Event");
         submitButton.getStyleClass().addAll("submitEventButton", "buttonStandard");
+        logic.setHandler(submitButton);
 
         Pane leftPane = new Pane(eventName, eventLabel, eventDesc, descLabel,
                 eventDate, timeComboBox, timeLabel, submitButton, locationCombo, locLabel);
@@ -96,6 +98,26 @@ public class CreateEventView extends ViewClass {
 
     private ComboBox<String> createLocationCombo(){
         return logic.createLocationCombo();
+    }
+
+    public TextField getEventName() {
+        return eventName;
+    }
+
+    public TextArea getEventDesc() {
+        return eventDesc;
+    }
+
+    public DatePicker getEventDate() {
+        return eventDate;
+    }
+
+    public ComboBox<String> getLocationCombo() {
+        return locationCombo;
+    }
+
+    public ComboBox<String> getTimeComboBox() {
+        return timeComboBox;
     }
 }
 

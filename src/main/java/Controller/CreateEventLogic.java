@@ -1,12 +1,16 @@
 package Controller;
 
+import Model.Event;
 import Model.Location;
 import Model.Map;
 import Repository.DatabaseHandler;
 import View.CreateEventView;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +24,19 @@ public class CreateEventLogic {
 
     public VBox getMapVBox() {
         return Map.getInstance().getMapVBox();
+    }
+
+    public void setHandler(Button submitButton) {
+        submitButton.setOnAction( actionEvent -> {
+            DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("hh:mm a");
+            LocalTime localTime = LocalTime.parse(view.getTimeComboBox().getValue(), inputFormatter);
+
+            LocalDateTime localDateTime = view.getEventDate().getValue().atTime(localTime);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String formattedDateTime = localDateTime.format(formatter);
+
+            DatabaseHandler.createEvent(view.getEventName().getText(), view.getEventDesc().getText(), formattedDateTime, view.getLocationCombo().getValue(), 50, 50, "Test Club");
+        });
     }
 
     public ComboBox<String> createLocationCombo(){
