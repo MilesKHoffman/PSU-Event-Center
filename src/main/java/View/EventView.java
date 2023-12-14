@@ -32,7 +32,7 @@ public class EventView extends ViewClass {
             drawEvents(logic.getAllEvents(), "ALL EVENTS" );
         }
         else {
-            drawEvents( logic.getAllEvents(), "MY EVENTS");
+            drawEvents( logic.getUserEvents(), "MY EVENTS");
         }
 
         drawSideMap();

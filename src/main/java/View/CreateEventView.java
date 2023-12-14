@@ -25,12 +25,6 @@ public class CreateEventView extends ViewClass {
 
     public void drawMap() {
         VBox mapVBox = logic.getMapVBox();
-        //Map.mapClick();
-        Map.mapClick(coords -> {
-            // Handle the result here
-            System.out.println("Latitude: " + coords[0] + ", Longitude: " + coords[1]);
-            // Update your UI or perform other actions
-        });
 
         Map.setMapCenter(42.119212, -79.982995);
 

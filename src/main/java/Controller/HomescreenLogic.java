@@ -1,9 +1,14 @@
 package Controller;
 
+import Model.Event;
+import Model.User;
+import Repository.DatabaseHandler;
 import View.Components.EventCard;
 import View.EventView;
 import View.HomescreenView;
 import javafx.scene.layout.Pane;
+
+import java.util.ArrayList;
 
 public class HomescreenLogic {
 
@@ -21,5 +26,13 @@ public class HomescreenLogic {
 
             new ViewController( new EventView(!card.getIsFollowed()) ).showView();
         });
+    }
+
+    public ArrayList<Event> getAllEvents(){
+        return DatabaseHandler.getAllEvents();
+    }
+
+    public ArrayList<Event> getUserEvents() {
+        return DatabaseHandler.getUserEvents(User.getInstance().getUserID());
     }
 }

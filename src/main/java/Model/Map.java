@@ -50,31 +50,6 @@ public class Map extends ViewClass {
                 + latitude + ", longitude: " + longitude + "}}));");
     }
 
-    // Java method to handle map clicks
-    public static void mapClick(Consumer<int[]> callback) {
-        webEngine.executeScript(
-                "document.getElementById('map_canvas').addEventListener('click', function(event) {" +
-                        "var latLng = event.latLng;" +
-                        "var latitude = latLng.lat();" +
-                        "var longitude = latLng.lng();" +
-                        "document.dispatchEvent(new CustomEvent('mapClick', { detail: { latitude: latitude, longitude: longitude } }));" +
-                        "});"
-        );
-
-        webEngine.setOnStatusChanged(event -> {
-            if ("mapClick".equals(event.getData())) {
-                String jsonString = (String) webEngine.executeScript(
-                        "JSON.stringify(window.mapClickData);"
-                );
-
-                Gson gson = new Gson();
-                int[] coords = gson.fromJson(jsonString, int[].class);
-
-                Platform.runLater(() -> callback.accept(coords));
-            }
-        });
-    }
-
     public static Map getInstance() {
         return map;
     }

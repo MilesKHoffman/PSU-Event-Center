@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Event;
 import Model.Map;
+import Model.User;
 import View.EventView;
 import Repository.DatabaseHandler;
 import javafx.scene.layout.VBox;
@@ -17,6 +18,10 @@ public class EventLogic {
 
     public ArrayList<Event> getAllEvents(){
         return DatabaseHandler.getAllEvents();
+    }
+
+    public ArrayList<Event> getUserEvents() {
+        return DatabaseHandler.getUserEvents(User.getInstance().getUserID());
     }
 
     public VBox getMapVBox() {
