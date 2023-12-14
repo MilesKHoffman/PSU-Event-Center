@@ -14,7 +14,7 @@ public class MapView extends ViewClass {
         drawMap();
         setScene("MapStyle.css");
     }
-
+// test
     private void drawMap(){
         MapComponent map = new MapComponent();
 

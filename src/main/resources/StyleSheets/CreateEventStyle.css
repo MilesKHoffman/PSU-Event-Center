@@ -1,21 +1,54 @@
 @import "mainStyle.css";
 
+
 .eventName {
-    -fx-background-color: green;
+    -fx-pref-width: 250;
+    -fx-translate-y: 20;
+    -fx-translate-x: 100;
 }
 
 .eventDesc {
-
+    -fx-translate-y: 150;
+    -fx-translate-x: 100;
+    -fx-wrap-text: true;
+    -fx-max-width: 250;
 }
 
 .eventTime {
+    -fx-pref-width: 250;
+    -fx-translate-y: 70;
+    -fx-translate-x: 100;
+}
+
+.eventTimeCombo {
+    -fx-pref-width: 250;
+    -fx-translate-y: 100;
+    -fx-translate-x: 100;
+}
+
+.textLabel {
+    -fx-translate-x: 100;
+}
+
+.eventLabel {
 
 }
 
-Label {
+.descLabel {
+    -fx-translate-y: 130;
+}
 
+.timeLabel {
+    -fx-translate-y: 50;
 }
 
 .leftPane {
+    -fx-pref-height: sceneHeight - headerHeight;
+    -fx-pref-width: sceneWidth / 2;
+    -fx-translate-y: 75;
+}
 
+.submitEventButton {
+    -fx-translate-x: 100;
+    -fx-translate-y: 450;
 }

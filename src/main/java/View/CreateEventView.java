@@ -1,23 +1,24 @@
 package View;
 
-import Model.Map;
+import Controller.Functions;
 import Controller.CreateEventLogic;
 import View.Components.MapComponent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CreateEventView extends ViewClass {
 
     private CreateEventLogic logic = new CreateEventLogic(this);
 
-    private TextField eventName, eventDateTime;
+    private TextField eventName;
+    private DatePicker eventDate;
     private TextArea eventDesc;
     private Button submitButton;
+    private ComboBox<String> locationCombo;
 
     public CreateEventView() {
         super();
@@ -41,31 +42,57 @@ public class CreateEventView extends ViewClass {
         root.getChildren().add(mapPane);
     }
     public void drawScreen() {
+        Functions functions = new Functions();
 
         eventName = new TextField();
         eventName.setPromptText("Event Name");
         eventName.getStyleClass().add("eventName");
-        Label eventLabel = new Label("Event Label:");
+        Label eventLabel = new Label("Event Name:");
+        eventLabel.getStyleClass().addAll("textLabel", "eventLabel");
 
         eventDesc = new TextArea();
         eventDesc.setPromptText("Event Description");
         eventDesc.getStyleClass().add("eventDesc");
         Label descLabel = new Label("Event Description:");
+        descLabel.getStyleClass().addAll("textLabel", "descLabel");
 
-        eventDateTime = new TextField();
-        eventDateTime.setPromptText("Event Date and Time");
-        eventDateTime.getStyleClass().add("eventTime");
+        eventDate = new DatePicker();
+        eventDate.setPromptText("Event Date and Time");
+        eventDate.getStyleClass().add("eventTime");
+        ComboBox<String> timeComboBox = createTimeComboBox();
+        timeComboBox.setPromptText("Select Time");
+        timeComboBox.getStyleClass().add("eventTimeCombo");
         Label timeLabel = new Label("Event Date and Time:");
+        timeLabel.getStyleClass().addAll("textLabel", "timeLabel");
+
+        locationCombo = createLocationCombo();
 
         submitButton = new Button("Create Event");
+        submitButton.getStyleClass().addAll("submitEventButton", "buttonStandard");
 
-        Pane leftPane = new Pane(eventName, eventLabel, eventDesc, descLabel, eventDateTime, timeLabel);
+        Pane leftPane = new Pane(eventName, eventLabel, eventDesc, descLabel,
+                eventDate, timeComboBox, timeLabel, submitButton);
         leftPane.getStyleClass().add("leftPane");
 
-        VBox vbox = new VBox(leftPane);
-        vbox.setPrefWidth(sceneMidWi);
-        vbox.setLayoutY(sceneMidHi);
+        root.getChildren().add(leftPane);
 
-        root.getChildren().add(vbox);
+        // test
+    }
+
+    private ComboBox<String> createTimeComboBox() {
+        List<String> hours = new ArrayList<>();
+        for (int i = 0; i < 24; i++) {
+            String hour = String.format("%02d:00", i % 12 == 0 ? 12 : i % 12);
+            hours.add(i < 12 ? hour + " AM" : hour + " PM");
+        }
+
+        ComboBox<String> comboBox = new ComboBox<>();
+        comboBox.getItems().addAll(hours);
+        return comboBox;
+    }
+
+    private ComboBox<String> createLocationCombo(){
+        return null;
     }
 }
+

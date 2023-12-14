@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work on map view">
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work on map view"/>
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
     <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="connected to database">
       <change afterPath="$PROJECT_DIR$/src/main/java/Model/Location.java" afterDir="false" />
@@ -12,8 +12,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/MapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MapView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/CreateEventStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/CreateEventStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/mainStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Repository/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/DatabaseHandler.java" afterDir="false" />
     </list>
@@ -104,7 +105,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\leaflet\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaseView">
+  <component name="RunManager" selected="Application.UI_Testing">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />
@@ -170,7 +171,7 @@
       <workItem from="1702437579925" duration="931000" />
       <workItem from="1702464377509" duration="35000" />
       <workItem from="1702474386187" duration="42000" />
-      <workItem from="1702492511826" duration="22841000" />
+      <workItem from="1702492511826" duration="25735000" />
     </task>
     <task id="LOCAL-00001" summary="Blank">
       <created>1700795492648</created>
@@ -367,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702514094129</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Work on map view">
+      <created>1702515470153</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702515470153</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
