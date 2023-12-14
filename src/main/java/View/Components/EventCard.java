@@ -87,14 +87,15 @@ public class EventCard extends Pane {
             followClicked();
         });
 
-        deleteButton.setOnMouseClicked( mouseEvent -> {
-            if (DatabaseHandler.deleteEvent(this.id)) {
-                System.out.println("del successful");
-            }
-            else {
-                System.out.println("failed");
-            }
-        });
+        if (deleteButton != null) {
+            deleteButton.setOnMouseClicked(mouseEvent -> {
+                if (DatabaseHandler.deleteEvent(this.id)) {
+                    System.out.println("del successful");
+                } else {
+                    System.out.println("failed");
+                }
+            });
+        }
     }
 
     private void followClicked() {
