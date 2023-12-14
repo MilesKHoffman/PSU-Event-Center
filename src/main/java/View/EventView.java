@@ -7,11 +7,14 @@ import Model.Map;
 import Controller.EventLogic;
 import View.Components.EventCard;
 import View.Components.MapComponent;
+import javafx.application.Platform;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
+import javafx.scene.text.Text;
 
+import javax.xml.transform.Templates;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -34,7 +37,9 @@ public class EventView extends ViewClass {
 
         drawSideMap();
 
-        drawEventPop("TestPop", "THIs IS a test desc", "Erie", "Hardcoded in CLub", LocalDateTime.now());
+        drawEventPop("TestPop", "This is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \n",
+                "Erie",
+                "Hardcoded in CLub", LocalDateTime.now());
 
         setScene("EventStyle.css");
     }
@@ -59,22 +64,29 @@ public class EventView extends ViewClass {
         nameLabel.getStyleClass().add("namePop");
 
         Label locationLabel = new Label(location);
-        locationLabel.getStyleClass().add("locationText");
+        locationLabel.getStyleClass().add("locationPop");
 
         Label clubLabel = new Label(club);
-        clubLabel.getStyleClass().add("clubText");
+        clubLabel.getStyleClass().add("clubPop");
 
         Label timeLabel = new Label( time
                 .format(DateTimeFormatter.ofPattern("EEEE, MMMM d 'at' h:mma")));
-        timeLabel.getStyleClass().add("timeText");
+        timeLabel.getStyleClass().add("timePop");
 
         Label descLabel = new Label(desc);
+        descLabel.setWrapText(true);
+        descLabel.setMaxWidth(500);
         descLabel.getStyleClass().add("descPop");
 
-        Pane pane = new Pane(nameLabel, locationLabel, clubLabel, timeLabel, descLabel);
+        Pane pane = new Pane(nameLabel, locationLabel, clubLabel, timeLabel);
+        pane.getStyleClass().add("popPane");
 
-        TilePane container = new TilePane();
+        VBox container = new VBox(pane, descLabel);
         container.getStyleClass().add("containerEvent");
+
+        Platform.runLater(() -> {
+            container.setPrefHeight( container.getHeight() + 150);
+        });
 
         ScrollPane scroll = new ScrollPane(container);
         scroll.getStyleClass().add("popScroll");

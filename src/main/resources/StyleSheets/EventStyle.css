@@ -22,18 +22,39 @@ VBox {
 .descPop {
     -fx-translate-y: 110;
     -fx-translate-x: 30;
-    -fx-wrap-text: true;
-    -fx-max-width: 530;
 }
 
+.timePop {
+    -fx-translate-y: 50;
+    -fx-translate-x: 10;
+    -fx-font-size: 13;
+}
+
+.locationPop {
+    -fx-translate-y: 68;
+    -fx-translate-x: 10;
+    -fx-font-size: 13;
+}
+
+.clubPop {
+    -fx-translate-y: 86;
+    -fx-font-size: 13;
+    -fx-text-fill: gray;
+    -fx-translate-x: 10;
+}
+
+.popPane {
+
+}
 .containerEvent {
-    -fx-pref-width: 590;
-    -fx-max-height: 600;
-    -fx-min-height: 300;
-    -fx-background-color: secondColor;
+    -fx-pref-width: 570;
+    -fx-background-color: thirdColor;
+    -fx-padding: 10;
 }
 
 .popScroll {
     -fx-border-color: backColor;
+    -fx-pref-height: 195;
+    -fx-pref-width: 600;
     -fx-padding: 0;
 }
