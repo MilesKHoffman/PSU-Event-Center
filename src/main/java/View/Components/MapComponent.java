@@ -1,5 +1,8 @@
 package View.Components;
 
+import Model.Event;
+import Repository.DatabaseHandler;
+import javafx.animation.PauseTransition;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -12,8 +15,13 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.util.Duration;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class MapComponent {
 
@@ -110,7 +118,9 @@ public class MapComponent {
 
         Button testButton = new Button("testButton");
         testButton.setOnAction( actionEvent -> {
-            setLatLng(42.11889451425662, -79.98676190308014);
+            System.out.println("Test Button hit");
+
+            addAllMarkers(DatabaseHandler.getAllEvents() );
         });
 
         // create toolbar
@@ -131,14 +141,41 @@ public class MapComponent {
     // Sets and zooms into a point on the map.
     public void setLatLng( double lat, double lng){
 
-        System.out.println("Button hit");
-
         String latStr = String.valueOf(lat);
         String lngStr = String.valueOf(lng);
 
         Platform.runLater( () -> {
             webEngine.executeScript("document.setLatLng(" + latStr + "," + lngStr + ")");
         });
+    }
+
+    public void addAllMarkers(ArrayList<Event> eventList ){
+
+        for( Event event : eventList ){
+
+            String latStr = String.valueOf(event.getLatitude());
+            String lngStr = String.valueOf(event.getLongitude());
+            String name = event.getName();
+
+            System.out.println("lat long: " + latStr + " " + lngStr + " " + name);
+
+            Platform.runLater(() -> {
+
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e -> {
+                    webEngine.executeScript("document.addMarker(" + latStr + "," + lngStr + ",'" + name + "')");
+                });
+                pause.play();
+            });
+        }
+    }
+
+    private void addMarkerIfDefined(String latStr, String lngStr, String name) {
+        if ((boolean) webEngine.executeScript("typeof document.addMarker === 'function'")) {
+            webEngine.executeScript("document.addMarker(" + latStr + "," + lngStr + ",'" + name + "')");
+        } else {
+            System.err.println("addMarker function is still not defined after the delay.");
+        }
     }
 }
 

@@ -130,10 +130,13 @@ public class DatabaseHandler {
 
                         // Parse the string to a LocalDateTime object
                         LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, formatter);
+
+                        String eventLocation = resultSet.getString("event_location");
+                        String club = resultSet.getString("event_club");
                         double latitude = resultSet.getDouble("latitude");
                         double longitude = resultSet.getDouble("longitude");
 
-                        Event event = new Event(eventId, name, description, dateTime, latitude, longitude);
+                        Event event = new Event(eventId, name, description, dateTime, latitude, longitude, club, eventLocation);
                         eventList.add(event);
                     }
                 }
@@ -166,10 +169,13 @@ public class DatabaseHandler {
 
                         // Parse the string to a LocalDateTime object
                         LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, formatter);
+
+                        String eventLocation = resultSet.getString("event_location");
+                        String club = resultSet.getString("event_club");
                         double latitude = resultSet.getDouble("latitude");
                         double longitude = resultSet.getDouble("longitude");
 
-                        Event event = new Event(eventId, name, description, dateTime, latitude, longitude);
+                        Event event = new Event(eventId, name, description, dateTime, latitude, longitude, club, eventLocation);
                         eventList.add(event);
                     }
                 }

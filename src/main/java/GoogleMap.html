@@ -49,6 +49,8 @@
 
       var latlng = new google.maps.LatLng(42.119212, -79.982995);
 
+      var loading = true;
+
       var myOptions = {
         zoom: 14,
         center: latlng,
@@ -82,7 +84,17 @@
 
       // When activated the map goes back to this latlng
       document.resetToBehrend = function resetToBehrend() {
-        document.map.setcenter = latlng;
+        document.map.setCenter = latlng;
+      }
+
+      document.addMarker = function addMarker(lat, lng, name) {
+        var latLng = new google.maps.LatLng(lat, lng);
+
+        var marker = new google.maps.Marker({
+          position: latLng,
+          map: document.map,
+          title: name
+        });
       }
 
       // Zooms the map in on a spot
@@ -98,7 +110,6 @@
           title: 'Your Marker Title'  // Optional: Add a title to the marker
         });
       }
-
 
       document.clickLatLong = function clickLatLong() {
         google.maps.event.addListener(document.map, 'click', function(event) {
@@ -124,6 +135,7 @@
         setTimeout(function () {
           document.map.setOptions({ draggable: true });
           loadingOverlay.style.display = "none";
+          loading = false;
         }, 0);
       });
     }

@@ -58,6 +58,7 @@ public class ViewClass {
         Button homeButton = new Button("HOME");
         Button mapButton = new Button("EVENT MAP");
         Button createEventButton = new Button("CREATE EVENT");
+        Button adminPageButton = new Button("ADMIN");
 
         //----------------------------------------------------------------------------
         myEventButton.setOnAction( actionEvent -> {

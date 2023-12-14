@@ -58,6 +58,12 @@ public class EventView extends ViewClass {
 
     public void drawEventPop( String name, String desc, String location, String club, LocalDateTime time){
 
+        System.out.println(name);
+        System.out.println(desc);
+        System.out.println(location);
+        System.out.println(club);
+        System.out.println(time.toString());
+
         root.getChildren().remove(scroll);
 
         Label nameLabel = new Label(name);
@@ -85,7 +91,7 @@ public class EventView extends ViewClass {
         container.getStyleClass().add("containerEvent");
 
         Platform.runLater(() -> {
-            container.setPrefHeight( container.getHeight() + 150);
+            container.setPrefHeight( container.getHeight() + 250);
         });
 
         scroll = new ScrollPane(container);
