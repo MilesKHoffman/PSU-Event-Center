@@ -2,6 +2,8 @@ package View.Components;
 
 import Controller.EventCardLogic;
 import Controller.ViewController;
+import Model.User;
+import Repository.DatabaseHandler;
 import View.EventView;
 import View.HomescreenView;
 import View.ViewClass;
@@ -17,6 +19,7 @@ import java.util.Date;
 
 public class EventCard extends Pane {
 
+    private int id;
     private String name;
     private String description;
     private String location;
@@ -29,7 +32,8 @@ public class EventCard extends Pane {
     private int width = 350;
     private int height = 110;
 
-    public EventCard(String name, String description, String location, String club, boolean isFollowed, LocalDateTime time) {
+    public EventCard(int id, String name, String description, String location, String club, boolean isFollowed, LocalDateTime time) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.location = location;
@@ -87,6 +91,7 @@ public class EventCard extends Pane {
     private void followClicked() {
         isFollowed = !isFollowed;
         followButton.setText(isFollowed ? "UNFOLLOW" : "FOLLOW");
+        DatabaseHandler.saveEvent(User.getInstance().getUserID(), this.id);
     }
 
     public boolean getIsFollowed(){ return isFollowed; }

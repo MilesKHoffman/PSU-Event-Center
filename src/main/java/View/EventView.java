@@ -103,7 +103,7 @@ public class EventView extends ViewClass {
         Label eventLabel = new Label(label);
         TilePane eventTiles = new TilePane();
         for( Event e : events ){
-            eventClick = new EventCard(e.getName(), e.getDesc(), "add location func",
+            eventClick = new EventCard(e.getId(), e.getName(), e.getDesc(), "add location func",
                     "need club func", true, LocalDateTime.now() );
             logic.setEventClickHandler(e);
             eventTiles.getChildren().add( eventClick );

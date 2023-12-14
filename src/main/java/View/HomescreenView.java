@@ -47,7 +47,7 @@ public class HomescreenView extends ViewClass {
         TilePane upcomingTilesP = new TilePane();
         for( Event e : allEvents ){
 
-            EventCard card = new EventCard( e.getName(), e.getDesc(), e.getLocation(),
+            EventCard card = new EventCard( e.getId(), e.getName(), e.getDesc(), e.getLocation(),
                     e.getClub(), false, e.getDateTime() );
 
             logic.addCardEvent(card);
@@ -65,7 +65,7 @@ public class HomescreenView extends ViewClass {
         TilePane myEventsTileP = new TilePane();
         for( Event e : userEvents ){
 
-            EventCard card = new EventCard( e.getName(), e.getDesc(), e.getLocation(),
+            EventCard card = new EventCard( e.getId(), e.getName(), e.getDesc(), e.getLocation(),
                     e.getClub(), true, e.getDateTime() );
 
             logic.addCardEvent(card);
