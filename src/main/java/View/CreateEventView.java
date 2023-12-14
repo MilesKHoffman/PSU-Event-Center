@@ -2,9 +2,13 @@ package View;
 
 import Model.Map;
 import Controller.CreateEventLogic;
+import View.Components.MapComponent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
 public class CreateEventView extends ViewClass {
@@ -24,41 +28,44 @@ public class CreateEventView extends ViewClass {
     }
 
     public void drawMap() {
-        VBox mapVBox = logic.getMapVBox();
-        //Map.mapClick();
-        Map.mapClick(coords -> {
-            // Handle the result here
-            System.out.println("Latitude: " + coords[0] + ", Longitude: " + coords[1]);
-            // Update your UI or perform other actions
-        });
 
-        Map.setMapCenter(42.119212, -79.982995);
+        MapComponent map = new MapComponent();
+
+        BorderPane mapPane = map.getRoot();
 
         // set map size and layout
-        mapVBox.setPrefSize(sceneMidWi,sceneHeight - headerHeight);
-        mapVBox.setLayoutX(sceneMidWi);
-        mapVBox.setLayoutY(headerHeight);
+        mapPane.setPrefSize(sceneMidWi,sceneHeight - headerHeight);
+        mapPane.setLayoutX(sceneMidWi);
+        mapPane.setLayoutY(headerHeight);
 
-        root.getChildren().add(mapVBox);
+        root.getChildren().add(mapPane);
     }
     public void drawScreen() {
 
         eventName = new TextField();
         eventName.setPromptText("Event Name");
+        eventName.getStyleClass().add("eventName");
+        Label eventLabel = new Label("Event Label:");
 
         eventDesc = new TextArea();
         eventDesc.setPromptText("Event Description");
+        eventDesc.getStyleClass().add("eventDesc");
+        Label descLabel = new Label("Event Description:");
 
         eventDateTime = new TextField();
         eventDateTime.setPromptText("Event Date and Time");
+        eventDateTime.getStyleClass().add("eventTime");
+        Label timeLabel = new Label("Event Date and Time:");
 
         submitButton = new Button("Create Event");
 
-        VBox vbox = new VBox(eventName, eventDesc, eventDateTime);
+        Pane leftPane = new Pane(eventName, eventLabel, eventDesc, descLabel, eventDateTime, timeLabel);
+        leftPane.getStyleClass().add("leftPane");
+
+        VBox vbox = new VBox(leftPane);
         vbox.setPrefWidth(sceneMidWi);
         vbox.setLayoutY(sceneMidHi);
 
         root.getChildren().add(vbox);
-
     }
 }

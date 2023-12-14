@@ -1,1 +1,21 @@
 @import "mainStyle.css";
+
+.eventName {
+    -fx-background-color: green;
+}
+
+.eventDesc {
+
+}
+
+.eventTime {
+
+}
+
+Label {
+
+}
+
+.leftPane {
+
+}
