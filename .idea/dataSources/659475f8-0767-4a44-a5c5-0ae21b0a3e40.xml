@@ -446,8 +446,8 @@
     </routine>
     <schema id="177" parent="1" name="main">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-12-13.19:39:44.491</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-12-14.00:39:44</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-12-13.20:10:17.685</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-12-14.01:10:17</LocalIntrospectionTimestamp>
     </schema>
     <argument id="178" parent="16">
       <ArgumentDirection>R</ArgumentDirection>
@@ -1470,129 +1470,150 @@
       <Position>1</Position>
     </argument>
     <table id="518" parent="177" name="events"/>
-    <table id="519" parent="177" name="sqlite_master">
+    <table id="519" parent="177" name="locations"/>
+    <table id="520" parent="177" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="520" parent="177" name="sqlite_sequence">
+    <table id="521" parent="177" name="sqlite_sequence">
       <System>1</System>
     </table>
-    <table id="521" parent="177" name="user_events"/>
-    <table id="522" parent="177" name="users"/>
-    <column id="523" parent="518" name="event_id">
+    <table id="522" parent="177" name="user_events"/>
+    <table id="523" parent="177" name="users"/>
+    <column id="524" parent="518" name="event_id">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="524" parent="518" name="event_name">
+    <column id="525" parent="518" name="event_name">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="525" parent="518" name="event_description">
+    <column id="526" parent="518" name="event_description">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="526" parent="518" name="event_datetime">
+    <column id="527" parent="518" name="event_datetime">
       <DasType>DATETIME|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="527" parent="518" name="event_location">
+    <column id="528" parent="518" name="event_location">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="528" parent="518" name="latitude">
+    <column id="529" parent="518" name="latitude">
       <DasType>DOUBLE|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="529" parent="518" name="longitude">
+    <column id="530" parent="518" name="longitude">
       <DasType>DOUBLE|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="530" parent="518" name="event_club">
+    <column id="531" parent="518" name="event_club">
       <DasType>TEXT|0s</DasType>
       <Position>8</Position>
     </column>
-    <key id="531" parent="518">
+    <key id="532" parent="518">
       <ColNames>event_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="532" parent="519" name="type">
-      <DasType>TEXT|0s</DasType>
+    <column id="533" parent="519" name="location_id">
+      <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="533" parent="519" name="name">
+    <column id="534" parent="519" name="location_name">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="534" parent="519" name="tbl_name">
+    <column id="535" parent="519" name="latitude">
+      <DasType>DOUBLE|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="536" parent="519" name="longitude">
+      <DasType>DOUBLE|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <key id="537" parent="519">
+      <ColNames>location_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="538" parent="520" name="type">
+      <DasType>TEXT|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="539" parent="520" name="name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="540" parent="520" name="tbl_name">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="535" parent="519" name="rootpage">
+    <column id="541" parent="520" name="rootpage">
       <DasType>INT|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="536" parent="519" name="sql">
+    <column id="542" parent="520" name="sql">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="537" parent="520" name="name">
+    <column id="543" parent="521" name="name">
       <Position>1</Position>
     </column>
-    <column id="538" parent="520" name="seq">
+    <column id="544" parent="521" name="seq">
       <Position>2</Position>
     </column>
-    <column id="539" parent="521" name="user_id">
+    <column id="545" parent="522" name="user_id">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="540" parent="521" name="event_id">
+    <column id="546" parent="522" name="event_id">
       <DasType>INTEGER|0s</DasType>
       <Position>2</Position>
     </column>
-    <foreign-key id="541" parent="521">
+    <foreign-key id="547" parent="522">
       <ColNames>user_id</ColNames>
       <RefColNames>user_id</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <foreign-key id="542" parent="521">
+    <foreign-key id="548" parent="522">
       <ColNames>event_id</ColNames>
       <RefColNames>event_id</RefColNames>
       <RefTableName>events</RefTableName>
     </foreign-key>
-    <index id="543" parent="521" name="sqlite_autoindex_user_events_1">
+    <index id="549" parent="522" name="sqlite_autoindex_user_events_1">
       <ColNames>user_id
 event_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="544" parent="521">
+    <key id="550" parent="522">
       <ColNames>user_id
 event_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_user_events_1</UnderlyingIndexName>
     </key>
-    <column id="545" parent="522" name="user_id">
+    <column id="551" parent="523" name="user_id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="546" parent="522" name="username">
+    <column id="552" parent="523" name="username">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="547" parent="522" name="password">
+    <column id="553" parent="523" name="password">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="548" parent="522" name="is_admin">
+    <column id="554" parent="523" name="is_admin">
       <DasType>INTEGER|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
     </column>
-    <column id="549" parent="522" name="other_user_fields">
+    <column id="555" parent="523" name="other_user_fields">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
-    <key id="550" parent="522">
+    <key id="556" parent="523">
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>
