@@ -20,7 +20,7 @@ public class CreateUserLogic {
             if (!DatabaseHandler.userExists(username, password)) {
                 System.out.println("Inside of .userExists\n");
                 //will create admin account if username == admin
-                if (DatabaseHandler.createUser(username, password, username.contains("admin"))) {
+                if (DatabaseHandler.createUser(username, password, true)) {
                     System.out.println("User created: " + username + " " + password);
                 }
                 else {
