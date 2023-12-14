@@ -85,7 +85,7 @@ public class EventView extends ViewClass {
         container.getStyleClass().add("containerEvent");
 
         Platform.runLater(() -> {
-            container.setPrefHeight( container.getHeight() + 150);
+            container.setPrefHeight( container.getHeight() + 250);
         });
 
         scroll = new ScrollPane(container);
