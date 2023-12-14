@@ -50,7 +50,6 @@ VBox {
     -fx-pref-width: 570;
     -fx-background-color: thirdColor;
     -fx-padding: 10;
-    -fx-border-color: red;
 }
 
 .popScroll {
