@@ -4,6 +4,7 @@ import Model.Event;
 import Model.Map;
 import Model.User;
 import View.Components.EventCard;
+import View.Components.MapComponent;
 import View.EventView;
 import Repository.DatabaseHandler;
 import javafx.scene.layout.VBox;
@@ -33,5 +34,16 @@ public class EventLogic {
         e.setOnMouseClicked(event -> {
             view.drawEventPop(e.getName(), e.getDescription(), e.getLocation(), e.getClub(), e.getDateTime());
         });
+    }
+
+    public void setMapMarkers(boolean allEvents, MapComponent map){
+
+        if( allEvents){
+            map.addAllMarkers( DatabaseHandler.getAllEvents() );
+        }
+        else{
+            map.addAllMarkers( DatabaseHandler.getUserEvents( User.getInstance().getUserID() ) );
+        }
+
     }
 }

@@ -18,7 +18,7 @@ public class MapView extends ViewClass {
 // test
     private void drawMap(){
         MapComponent map = new MapComponent();
-        //logic.setMap(map);
+        logic.setMap(map);
 
 
         BorderPane mapPane = map.getRoot();
@@ -26,7 +26,6 @@ public class MapView extends ViewClass {
         mapPane.setPrefHeight( sceneHeight - headerHeight);
         mapPane.setLayoutY(headerHeight);
         mapPane.setPrefWidth(sceneWidth);
-        map.addAllMarkers(DatabaseHandler.getAllEvents());
         root.getChildren().add(mapPane);
     }
 }

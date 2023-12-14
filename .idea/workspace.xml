@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="work on map" />
-    <change afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/AdminStyle.css" afterDir="false" />
-    <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-    <change beforePath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659475f8-0767-4a44-a5c5-0ae21b0a3e40.xml" afterDir="false" />
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="connected to database">
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="work on map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MapLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MapLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GoogleMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GoogleMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Components/MapComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Components/MapComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EventLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EventLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/MapView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MapView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UI_Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ViewClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EventLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EventLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Components/EventCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Components/EventCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +134,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapFunctionsTest" />
         <item itemvalue="Application.MapFunctionsTest" />
       </list>
     </recent_temporary>
@@ -377,14 +368,6 @@
       <option name="project" value="LOCAL" />
       <updated>1702519227326</updated>
     </task>
-    <task id="LOCAL-00029" summary="work on map">
-      <created>1702520181628</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1702520181628</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
     <task id="LOCAL-00029" summary="connected to database">
       <option name="closed" value="true" />
       <created>1702522443594</created>
@@ -401,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702523390687</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="work on map">
+      <created>1702525825579</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1702525825579</updated>
+    </task>
+    <task id="LOCAL-00032" summary="work on map">
+      <created>1702525972159</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1702525972159</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +431,6 @@
     <MESSAGE value="Work on map view" />
     <MESSAGE value="Work on create event" />
     <MESSAGE value="connected to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected to database" />
     <MESSAGE value="work on map" />
     <option name="LAST_COMMIT_MESSAGE" value="work on map" />
   </component>

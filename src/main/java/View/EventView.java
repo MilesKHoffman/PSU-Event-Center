@@ -23,11 +23,14 @@ public class EventView extends ViewClass {
 
     private EventCard eventClick;
     private Pane eventPop = new Pane();
+    private boolean allEvents;
     private ScrollPane scroll;
     private EventLogic logic = new EventLogic( this ); // Connects to the logic -MH
     public EventView(Boolean allEvents) {
 
         super();
+
+        this.allEvents = allEvents;
 
         if (allEvents) {
             drawEvents(logic.getAllEvents(), "ALL EVENTS" );
@@ -45,6 +48,7 @@ public class EventView extends ViewClass {
 
     private void drawSideMap(){
         MapComponent map = new MapComponent();
+        logic.setMapMarkers(allEvents, map);
 
         BorderPane mapPane = map.getRoot();
 
