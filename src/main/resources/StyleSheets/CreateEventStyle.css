@@ -52,3 +52,13 @@
     -fx-translate-x: 100;
     -fx-translate-y: 450;
 }
+
+.locCombo {
+    -fx-translate-x: 100;
+    -fx-translate-y: 400;
+}
+
+.locLabel {
+    -fx-translate-x: 100;
+    -fx-translate-y: 380;
+}

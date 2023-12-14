@@ -18,4 +18,6 @@ public class Location {
     public double getLongitude() {
         return longitude;
     }
+
+    public String getName() { return name; }
 }

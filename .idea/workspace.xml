@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work on map view">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Components/EventCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Components/EventCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/EventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/EventView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/HomescreenView.java" afterDir="false" />
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work on create event">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CreateEventLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CreateEventLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateEventView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheets/CreateEventStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheets/CreateEventStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,6 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702513830774</updated>
     </task>
+    <task id="LOCAL-00026" summary="connected to database">
+      <option name="closed" value="true" />
+      <created>1702515440161</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702515440161</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <task id="LOCAL-00026" summary="Work on map view">
       <created>1702514094129</created>
       <option name="number" value="00026" />
@@ -391,6 +399,7 @@
     <MESSAGE value="Work on ui and folders" />
     <MESSAGE value="Work on event cards" />
     <MESSAGE value="Work on map view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on map view" />
     <MESSAGE value="connected to database" />
     <option name="LAST_COMMIT_MESSAGE" value="connected to database" />
   </component>

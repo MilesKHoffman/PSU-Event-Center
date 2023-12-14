@@ -66,12 +66,15 @@ public class CreateEventView extends ViewClass {
         timeLabel.getStyleClass().addAll("textLabel", "timeLabel");
 
         locationCombo = createLocationCombo();
+        locationCombo.getStyleClass().add("locCombo");
+        Label locLabel = new Label("Enter Location:");
+        locLabel.getStyleClass().add("locLabel");
 
         submitButton = new Button("Create Event");
         submitButton.getStyleClass().addAll("submitEventButton", "buttonStandard");
 
         Pane leftPane = new Pane(eventName, eventLabel, eventDesc, descLabel,
-                eventDate, timeComboBox, timeLabel, submitButton);
+                eventDate, timeComboBox, timeLabel, submitButton, locationCombo, locLabel);
         leftPane.getStyleClass().add("leftPane");
 
         root.getChildren().add(leftPane);
@@ -92,7 +95,7 @@ public class CreateEventView extends ViewClass {
     }
 
     private ComboBox<String> createLocationCombo(){
-        return null;
+        return logic.createLocationCombo();
     }
 }
 

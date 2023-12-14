@@ -8,6 +8,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CreateEventLogic {
 
@@ -23,9 +24,15 @@ public class CreateEventLogic {
 
     public ComboBox<String> createLocationCombo(){
 
-       // ArrayList<Location> locations = DatabaseHandler.
+       List<Location> locations = DatabaseHandler.getLocations();
 
-        return null;
+       ComboBox<String> locationCombo = new ComboBox<>();
+
+       for( Location loc : locations ){
+           locationCombo.getItems().add(loc.getName());
+       }
+
+        return locationCombo;
     }
 
 }
