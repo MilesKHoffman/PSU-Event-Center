@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="Work on create event">
+    <list default="true" id="b5440833-3b49-4b42-bcda-5b4b6d147fd7" name="Changes" comment="connected to database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GoogleMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GoogleMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Components/MapComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Components/MapComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Components/EventCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Components/EventCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702519227326</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="connected to database">
+      <option name="closed" value="true" />
+      <created>1702522443594</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702522443594</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,8 +405,8 @@
     <MESSAGE value="Work on ui and folders" />
     <MESSAGE value="Work on event cards" />
     <MESSAGE value="Work on map view" />
-    <MESSAGE value="connected to database" />
     <MESSAGE value="Work on create event" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work on create event" />
+    <MESSAGE value="connected to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="connected to database" />
   </component>
 </project>

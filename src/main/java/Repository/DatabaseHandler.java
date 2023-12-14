@@ -217,6 +217,24 @@ public class DatabaseHandler {
         }
     }
 
+    public static boolean deleteEvent(int event_id) {
+        try (Connection connection = getConnection()) {
+            String sql = "DELETE FROM events WHERE event_id = ?";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                statement.setInt(1, event_id); // Set the parameter value
+
+                statement.executeUpdate();
+            }
+
+            return true;
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return  false;
+    }
+
     public static ArrayList<Location> getLocations() {
         ArrayList<Location> locations = new ArrayList<Location>();
         try (Connection connection = getConnection()) {
