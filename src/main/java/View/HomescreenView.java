@@ -3,6 +3,7 @@ package View;
 import Controller.Functions;
 import Controller.HomescreenLogic;
 import Controller.ViewController;
+import Model.Event;
 import View.Components.EventCard;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,6 +11,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class HomescreenView extends ViewClass {
 
@@ -38,11 +40,15 @@ public class HomescreenView extends ViewClass {
         Functions function = new Functions();
 
         Label upcomingLabel = new Label("UPCOMING EVENTS");
-        TilePane upcomingTilesP = new TilePane();
-        for( int i = 0; i < 50; i++ ){
 
-            EventCard card = new EventCard( "Name" + i, "Desc", "Franklin",
-                    "Rando Club", false, LocalDateTime.now() );
+        ArrayList<Event> allEvents = logic.getAllEvents();
+        ArrayList<Event> userEvents = logic.getUserEvents();
+
+        TilePane upcomingTilesP = new TilePane();
+        for( Event e : allEvents ){
+
+            EventCard card = new EventCard( e.getName(), e.getDesc(), e.getLocation(),
+                    e.getClub(), false, e.getDateTime() );
 
             logic.addCardEvent(card);
             upcomingTilesP.getChildren().add(card);
@@ -57,10 +63,10 @@ public class HomescreenView extends ViewClass {
         Label myEventsLabel = new Label("MY EVENTS");
 
         TilePane myEventsTileP = new TilePane();
-        for( int i : new int[50]){
+        for( Event e : userEvents ){
 
-            EventCard card =  new EventCard("TestName", "This is a description",
-                    "Erie", "Club lang", true, LocalDateTime.now());
+            EventCard card = new EventCard( e.getName(), e.getDesc(), e.getLocation(),
+                    e.getClub(), true, e.getDateTime() );
 
             logic.addCardEvent(card);
             myEventsTileP.getChildren().add(card);
