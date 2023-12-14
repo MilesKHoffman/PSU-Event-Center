@@ -6,7 +6,7 @@ import View.HomescreenView;
 import View.LoginView;
 import Repository.DatabaseHandler;
 
-public class LoginLogic extends LogicInter {
+public class LoginLogic {
 
     private LoginView view;
 

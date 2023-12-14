@@ -1,9 +1,7 @@
 package View;
 
-import Controller.EventCardLogic;
 import Controller.Functions;
 import Model.Event;
-import Model.Map;
 import Controller.EventLogic;
 import View.Components.EventCard;
 import View.Components.MapComponent;
@@ -12,9 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
-import javafx.scene.text.Text;
 
-import javax.xml.transform.Templates;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;

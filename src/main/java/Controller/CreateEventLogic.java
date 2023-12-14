@@ -1,17 +1,13 @@
 package Controller;
 
-import Model.Event;
 import Model.Location;
-import Model.Map;
 import Repository.DatabaseHandler;
 import View.CreateEventView;
 import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CreateEventLogic {
@@ -20,10 +16,6 @@ public class CreateEventLogic {
 
     public CreateEventLogic(CreateEventView view) {
         this.view = view;
-    }
-
-    public VBox getMapVBox() {
-        return Map.getInstance().getMapVBox();
     }
 
     public void setHandler(Button submitButton) {

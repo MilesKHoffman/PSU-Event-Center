@@ -8,7 +8,6 @@ module com.example.sweng411projjavafx {
     requires jdk.jsobject;
     requires jdk.httpserver;
 
-    exports zTesting;
     exports Controller;
     exports Model;
     exports View;
