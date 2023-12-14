@@ -174,6 +174,24 @@ public class DatabaseHandler {
         }
     }
 
+    public static boolean unfollowEvent(int user_id, int event_id) {
+        try (Connection connection = getConnection()) {
+            String sql = "DELETE FROM user_events WHERE user_id = ? AND event_id = ?";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                statement.setInt(1, user_id);
+                statement.setInt(2, event_id);
+
+                statement.executeUpdate();
+
+                return true;
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
     public static ArrayList<Location> getLocations() {
         ArrayList<Location> locations = new ArrayList<Location>();
         try (Connection connection = getConnection()) {

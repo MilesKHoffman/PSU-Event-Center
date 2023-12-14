@@ -97,7 +97,7 @@
       <recent name="C:\1. School\SWENG  411\SWENG-411-Proj-JavaFX\src\main\resources\leaflet\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UI_Testing">
+  <component name="RunManager" selected="Application.BaseView">
     <configuration name="BaseView" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="View.BaseView" />
       <module name="SWENG-411-Proj-JavaFX" />

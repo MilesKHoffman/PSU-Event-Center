@@ -91,7 +91,12 @@ public class EventCard extends Pane {
     private void followClicked() {
         isFollowed = !isFollowed;
         followButton.setText(isFollowed ? "UNFOLLOW" : "FOLLOW");
-        DatabaseHandler.saveEvent(User.getInstance().getUserID(), this.id);
+        if (isFollowed) {
+            DatabaseHandler.saveEvent(User.getInstance().getUserID(), this.id);
+        }
+        else {
+            DatabaseHandler.unfollowEvent(User.getInstance().getUserID(), this.id);
+        }
     }
 
     public boolean getIsFollowed(){ return isFollowed; }
