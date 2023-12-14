@@ -23,6 +23,7 @@ public class EventView extends ViewClass {
 
     private EventCard eventClick;
     private Pane eventPop = new Pane();
+    private ScrollPane scroll;
     private EventLogic logic = new EventLogic( this ); // Connects to the logic -MH
     public EventView(Boolean allEvents) {
 
@@ -35,11 +36,8 @@ public class EventView extends ViewClass {
             drawEvents( logic.getUserEvents(), "MY EVENTS");
         }
 
-        drawSideMap();
 
-        drawEventPop("TestPop", "This is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \nThis is a test \n",
-                "Erie",
-                "Hardcoded in CLub", LocalDateTime.now());
+        drawSideMap();
 
         setScene("EventStyle.css");
     }
@@ -59,6 +57,8 @@ public class EventView extends ViewClass {
     }
 
     public void drawEventPop( String name, String desc, String location, String club, LocalDateTime time){
+
+        root.getChildren().remove(scroll);
 
         Label nameLabel = new Label(name);
         nameLabel.getStyleClass().add("namePop");
@@ -88,7 +88,7 @@ public class EventView extends ViewClass {
             container.setPrefHeight( container.getHeight() + 150);
         });
 
-        ScrollPane scroll = new ScrollPane(container);
+        scroll = new ScrollPane(container);
         scroll.getStyleClass().add("popScroll");
         scroll.setLayoutX(sceneMidWi - 100);
         scroll.setLayoutY(headerHeight + 400);
@@ -103,9 +103,9 @@ public class EventView extends ViewClass {
         Label eventLabel = new Label(label);
         TilePane eventTiles = new TilePane();
         for( Event e : events ){
-            eventClick = new EventCard(e.getId(), e.getName(), e.getDesc(), "add location func",
-                    "need club func", true, LocalDateTime.now() );
-            logic.setEventClickHandler(e);
+            eventClick = new EventCard(e.getId(), e.getName(), e.getDesc(), e.getLocation(),
+                    e.getClub(), true, e.getDateTime() );
+            logic.setEventClickHandler(eventClick);
             eventTiles.getChildren().add( eventClick );
         }
         function.setCollectionInputStyle(eventTiles, new Button(), new String[]{"center"});

@@ -3,6 +3,7 @@ package Controller;
 import Model.Event;
 import Model.Map;
 import Model.User;
+import View.Components.EventCard;
 import View.EventView;
 import Repository.DatabaseHandler;
 import javafx.scene.layout.VBox;
@@ -28,9 +29,9 @@ public class EventLogic {
         return Map.getInstance().getMapVBox();
     }
 
-    public void setEventClickHandler(Event e) {
-        /*
-        bring up a larger tile of the events description below the map.
-         */
+    public void setEventClickHandler(EventCard e) {
+        e.setOnMouseClicked(event -> {
+            view.drawEventPop(e.getName(), e.getDescription(), e.getLocation(), e.getClub(), e.getDateTime());
+        });
     }
 }

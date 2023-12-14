@@ -110,4 +110,20 @@ public class EventCard extends Pane {
 
     public boolean getIsFollowed(){ return isFollowed; }
     public String getName(){ return name; }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getClub() {
+        return club;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
 }
