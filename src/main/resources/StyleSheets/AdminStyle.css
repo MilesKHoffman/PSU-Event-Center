@@ -1,0 +1,10 @@
+@import "mainStyle.css";
+
+.adminContainer {
+    -fx-translate-y: 100;
+    -fx-pref-height: 400;
+}
+
+.deletePane {
+    -fx-background-color: red;
+}
