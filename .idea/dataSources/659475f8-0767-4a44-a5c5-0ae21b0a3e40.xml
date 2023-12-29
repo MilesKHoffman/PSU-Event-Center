@@ -1423,5 +1423,153 @@
     <argument id="503" parent="172">
       <Position>1</Position>
     </argument>
+    <table id="504" parent="173" name="events"/>
+    <table id="505" parent="173" name="locations"/>
+    <table id="506" parent="173" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="507" parent="173" name="sqlite_sequence">
+      <System>1</System>
+    </table>
+    <table id="508" parent="173" name="user_events"/>
+    <table id="509" parent="173" name="users"/>
+    <column id="510" parent="504" name="event_id">
+      <DasType>INTEGER|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="511" parent="504" name="event_name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="512" parent="504" name="event_description">
+      <DasType>TEXT|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="513" parent="504" name="event_datetime">
+      <DasType>DATETIME|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="514" parent="504" name="event_location">
+      <DasType>TEXT|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="515" parent="504" name="latitude">
+      <DasType>DOUBLE|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="516" parent="504" name="longitude">
+      <DasType>DOUBLE|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="517" parent="504" name="event_club">
+      <DasType>TEXT|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <key id="518" parent="504">
+      <ColNames>event_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="519" parent="505" name="location_id">
+      <DasType>INTEGER|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="520" parent="505" name="location_name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="521" parent="505" name="latitude">
+      <DasType>DOUBLE|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="522" parent="505" name="longitude">
+      <DasType>DOUBLE|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <key id="523" parent="505">
+      <ColNames>location_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="524" parent="506" name="type">
+      <DasType>TEXT|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="525" parent="506" name="name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="526" parent="506" name="tbl_name">
+      <DasType>TEXT|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="527" parent="506" name="rootpage">
+      <DasType>INT|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="528" parent="506" name="sql">
+      <DasType>TEXT|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="529" parent="507" name="name">
+      <Position>1</Position>
+    </column>
+    <column id="530" parent="507" name="seq">
+      <Position>2</Position>
+    </column>
+    <column id="531" parent="508" name="user_id">
+      <DasType>INTEGER|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="532" parent="508" name="event_id">
+      <DasType>INTEGER|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="533" parent="508">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>users</RefTableName>
+    </foreign-key>
+    <foreign-key id="534" parent="508">
+      <ColNames>event_id</ColNames>
+      <RefColNames>event_id</RefColNames>
+      <RefTableName>events</RefTableName>
+    </foreign-key>
+    <index id="535" parent="508" name="sqlite_autoindex_user_events_1">
+      <ColNames>user_id
+event_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="536" parent="508">
+      <ColNames>user_id
+event_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_user_events_1</UnderlyingIndexName>
+    </key>
+    <column id="537" parent="509" name="user_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>INTEGER|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="538" parent="509" name="username">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="539" parent="509" name="password">
+      <DasType>TEXT|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="540" parent="509" name="is_admin">
+      <DasType>INTEGER|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>4</Position>
+    </column>
+    <column id="541" parent="509" name="other_user_fields">
+      <DasType>TEXT|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <key id="542" parent="509">
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

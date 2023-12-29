@@ -14,6 +14,8 @@ public class CreateEventLogic {
 
     private CreateEventView view;
 
+    List<Location> locations;
+
     public CreateEventLogic(CreateEventView view) {
         this.view = view;
     }
@@ -27,13 +29,19 @@ public class CreateEventLogic {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
             String formattedDateTime = localDateTime.format(formatter);
 
-            DatabaseHandler.createEvent(view.getEventName().getText(), view.getEventDesc().getText(), formattedDateTime, view.getLocationCombo().getValue(), 50, 50, "Test Club");
+            Location loc = locations.stream()
+                    .filter( location -> view.getLocationCombo().getValue().equals(location.getName()))
+                    .findFirst().orElse(null);
+
+            DatabaseHandler.createEvent(view.getEventName().getText(), view.getEventDesc().getText()
+                    , formattedDateTime, view.getLocationCombo().getValue()
+                    , loc.getLatitude(), loc.getLongitude(), "Club");
         });
     }
 
     public ComboBox<String> createLocationCombo(){
 
-       List<Location> locations = DatabaseHandler.getLocations();
+       locations = DatabaseHandler.getLocations();
 
        ComboBox<String> locationCombo = new ComboBox<>();
 
